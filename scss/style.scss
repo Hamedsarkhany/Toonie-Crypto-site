@@ -1,0 +1,704 @@
+@import "variable";
+@import "function";
+@import "animation";
+
+body.crypto_landing_page_1 {
+    background-color: #09111B;
+
+    .Ellipse1039_2_png {
+        display: flex; 
+        justify-content: flex-end; 
+        position: absolute;
+        top: 164px; 
+        width: 100%; 
+        filter: blur(159.372314453125px);
+        z-index: -1;
+    }
+
+    header.container-fluid {
+        .header {
+            margin-top: 2rem;
+            position: relative;
+            z-index: 1;
+
+            .logo {
+                margin-left: 9%;
+
+                img {
+                    width: 120px;
+                }
+            }
+
+            .menu {
+                ul.items {
+                    list-style: none;
+                    display: flex;
+                    justify-content: space-around;
+                    margin-bottom: 0rem;
+                    padding-left: 0rem;
+
+                    .item {
+                        a {
+                            color: var(--shade-of-blue-0, #F5F6FF);
+                            font-family: Futura_PT_Light;
+                            font-size: 20px;
+
+                            &:hover {
+                                border-bottom: #FFF solid 3px;
+                                transition: border-bottom 300ms ease;
+                            }
+                        }
+
+                        ////style for dropdown
+                        .dropdown-content {
+                            display: none;
+                            position: absolute;
+                            background-color: #09111B;
+                            min-width: 100px;
+                            z-index: 1;
+                            list-style: none;
+                        }
+
+                        &:hover .dropdown-content {
+                            display: block;
+                        }
+
+                    }
+                }
+            }
+
+            .lig_tran {
+                display: inline-flex;
+                justify-content: flex-end;
+                column-gap: 20px;
+                width: 40%;
+                padding-right: 15px;
+
+                div {
+                    cursor: pointer;
+                }
+            }
+
+            .sing_up_in {
+                display: inline-flex;
+                column-gap: 30px;
+                width: 57%;
+                justify-content: center;
+
+                .Sign_Up {
+                    border-radius: 9.556px;
+                    padding: 5px 30px 7px;
+                    border: 0.597px solid #FFF;
+
+                    a {
+                        color: var(--primary-bg-neutral-white, #FFF);
+                        text-align: center;
+                        /* Futura PT/mobile/body/demibold */
+                        font-family: Futura_PT_normal;
+                        font-size: 14px;
+                        line-height: normal;
+                    }
+
+                }
+
+                .Sign_In {
+                    border-radius: 9.556px;
+                    padding: 5px 33px 7px;
+                    background: $btn_color;
+
+                    a {
+                        color: var(--primary-bg-neutral-white, #FFF);
+                        text-align: center;
+                        /* Futura PT/mobile/body/demibold */
+                        font-family: Futura_PT_normal;
+                        font-size: 14px;
+                        line-height: normal;
+                    }
+                }
+            }
+
+            // responsive header 1368px & 1600px
+            @include mediaxxl {
+                .logo {
+                    margin-left: 5%;
+                }
+            }
+
+            // responsive header 1200px & 1367.9px
+            @include mediaxl {
+                .lig_tran {
+                    width: 20%;
+                }
+
+                .sing_up_in {
+                    width: 67%;
+                }
+            }
+
+            // responsive header 992px & 1199px
+            @include medialg {
+                .lig_tran {
+                    width: 23%;
+                }
+
+                .sing_up_in {
+                    width: 75%;
+                    column-gap: 11px;
+                }
+            }
+        }
+    }
+
+
+    ////////////////////////// main style 
+    /// 
+    /// 
+    main.container-fluid {
+        padding: 0px;
+
+        div.main {
+            margin-bottom: 100px;
+            .back_site_blur {
+                background: rgba(254, 254, 254, 0.08);
+                backdrop-filter: blur(31.874464035px);
+                height: 680px;
+                position: relative;
+                z-index: 0;
+                top: 0px;
+
+                .title_site {
+                    padding-top: 250px;
+
+                    .titr {
+                        h1 {
+                            background: linear-gradient(180deg, #FFF 0%, rgba(255, 255, 255, 0.53) 76.52%);
+                            background-clip: text;
+                            -webkit-background-clip: text;
+                            -webkit-text-fill-color: transparent;
+                            text-align: center;
+                            font-family: Futura_PT_normal;
+                            font-size: 4rem;
+                            line-height: 71.957px;
+                            /* 120.401% */
+                            text-transform: uppercase;
+                            animation: slidein 1000ms ease 0s backwards;
+
+                        }
+
+                    }
+
+                    .subtitr {
+                        h4 {
+                            background: linear-gradient(180deg, #FFF 61.11%, rgba(255, 255, 255, 0.00) 100%);
+                            text-align: center;
+                            background-clip: text;
+                            -webkit-background-clip: text;
+                            -webkit-text-fill-color: transparent;
+                            font-family: Futura_PT_Light;
+                            font-size: 30.687px;
+                            font-style: normal;
+                            font-weight: 300;
+                            line-height: 57.614px;
+                            animation: slidein 1200ms ease 0.75s backwards;
+                        }
+                    }
+
+                    .text_p {
+                        p {
+                            color: #FFF;
+                            text-align: center;
+                            font-family: Futura_PT_Light;
+                            font-size: 28.765px;
+                            font-style: normal;
+                            font-weight: 450;
+                            line-height: 71.957px;
+                            /* 120.401% */
+                            background: linear-gradient(180deg, #FFF 0%, rgb(41 40 40 / 53%) 76.52%);
+                            background-clip: text;
+                            -webkit-background-clip: text;
+                            -webkit-text-fill-color: transparent;
+                            animation: slidein 1200ms ease 1.5s backwards;
+                        }
+                    }
+
+                    .star {
+                        display: inline-block;
+                        position: relative;
+                        left: 92%;
+                        direction: rtl; 
+                        margin-right: 1.5%; 
+                    }
+
+                    .cryptotter {
+                        display: flex;
+                        justify-content: center;
+                        position: absolute;
+                        top: 479px;
+                        left: 74%;
+                        z-index: 0;
+                        filter: blur(18.874464035px);
+                    }
+
+                    .button_start {
+                        @extend .buttom;
+                        animation: slidein_left 1200ms ease 2.5s backwards;
+
+                    }
+
+                    .circle_logo {
+                        display: flex;
+                        justify-content: center;
+                        position: relative;
+                        top: 100px;
+                    }
+
+                    @include medialg {
+                        .star {
+                            left: 90%;
+                        }
+                    }
+                }
+            }
+            .svg_circle {
+                position: absolute; 
+                top: 279px; 
+                z-index: -2; 
+                display: flex; 
+                width: 100%; 
+                justify-content: center;
+            }
+            .bitcoin {
+                position: absolute; 
+                display: flex; 
+                width: 100%; 
+                justify-content: flex-start; 
+                top: 595px; 
+                z-index: -2; 
+                align-items: flex-end; 
+                column-gap: 5%;
+            }
+            .image_57 {
+                position: absolute;
+                display: flex;
+                width: 100%;
+                justify-content: flex-end;
+                top: 756px;
+                z-index: -1;
+                align-items: flex-start;
+                column-gap: 15%;
+                padding-right: 10%;
+
+            }
+
+            .image_4 {
+                position: absolute;
+                display: flex;
+                width: 100%;
+                justify-content: flex-start;
+                top: 798px;
+                z-index: -1;
+                align-items: flex-start;
+                column-gap: 15%;
+                padding-left: 27%;
+            }
+
+            .image_6 {
+                position: absolute;
+                display: flex;
+                width: 100%;
+                justify-content: center;
+                top: 920px;
+                z-index: -2;
+                align-items: flex-start;
+                padding-left: 4%;
+            }
+
+            .svg_dark {
+                position: relative;
+                display: flex;
+                width: 100%;
+                justify-content: center;
+                z-index: -2;
+                height: 420px;
+            }
+
+            .text_box {
+                .titr2 {
+                    h2 {
+                        @extend .h2_style;
+                    }
+                }
+
+                .p_textbox {
+                    margin-top: 15px;
+
+                    p {
+                        @extend .p_style;
+                    }
+                }
+            }
+
+            .boximg_logo {
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+
+                img {
+                    border-radius: 23.906px;
+                    background: var(--shade-of-blue-900, #0F1A27);
+                    padding: 31.874px 43.914px 80.682px 44.912px;
+                }
+            }
+
+            //component 2
+            .boximg_tabel_crypto {
+                padding-left: 5%;
+                animation: slidein_left 1200ms ease 1s backwards;
+            }
+
+            .text_box_2 {
+                .titr2 {
+                    h2 {
+                        @extend .h2_style;
+                    }
+                }
+
+                .p_textbox_2 {
+                    margin-top: 15px;
+
+                    p {
+                        @extend .p_style;
+                        padding-right: 61px;
+                    }
+                }
+            }
+
+            //component 3
+            .svg_component3 {
+                position: absolute;
+                width: 100%; 
+                display: flex; 
+                margin-top: -317px; 
+                justify-content: center;     
+                z-index: -2;
+            }
+            .text_box3 {
+                .titr3 {
+                    h2 {
+                        @extend .h2_style;
+                    }
+                }
+
+                .p_textbox3 {
+                    margin-top: 15px;
+
+                    p {
+                        @extend .p_style;
+                    }
+                }
+
+                .Managed_investing {
+                    @extend .buttom;
+                    justify-content: flex-start;
+                    margin-top: 25px;
+
+                    a {
+                        padding: 11px 17px 12px;
+                    }
+                }
+            }
+            .boxvideo {
+                svg {
+                    position: absolute;
+                    margin: 67px 92px;;
+                    z-index: 1;
+                }
+                video {  
+                    margin: -109px -20px;
+                    width: 300px;
+                    position: absolute;
+                    height: 451px;
+                    border-radius: 23.906px;
+                    background: var(--shade-of-blue-900, #0F1A27);
+                }
+            }
+
+            
+            @include medial992_1400 {
+                .d_992_1400_none{
+                    display: none;
+                }
+            }
+
+            //component 4
+            .background_image_comp4 {
+                position: absolute; 
+                width: 100%; 
+                display: flex; 
+                margin-top: -97px; 
+                justify-content: center; 
+                z-index: -2; 
+                filter: blur(17px);
+            }
+            .text_box4 {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+                .titr4 {
+                    h2 {
+                        @extend .h2_style;
+                    }
+                }
+
+                .crypto_compony {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    column-gap: 10%;
+                    margin-top: 74px;
+                    row-gap: 70px;
+                }
+            }
+
+            //component 5
+            .background_image_comp5 {
+                position: absolute; 
+                width: 100%; display: 
+                flex; margin-top: -450px; 
+                justify-content: center; 
+                z-index: -2;
+            }
+            .background_image {
+                background-image: url(../img/Rectangle9382.png);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: 100% 395px;
+            }
+            .text_box5 {
+
+                .titr5 {
+                    h2 {
+                        @extend .h2_style;
+                    }
+                }
+
+                .p_textbox5 {
+                    margin-top: 15px;
+
+                    p {
+                        @extend .p_style;
+                        padding-right: 0px;
+                    }
+                }
+
+                .Managed_investing {
+                    @extend .buttom;
+                    justify-content: flex-start;
+                    margin-top: 25px;
+
+                    a {
+                        padding: 11px 17px 12px;
+                    }
+                }
+            }
+
+             //component 6
+             .Group_h3 {
+                position: absolute;  
+                margin-top: -250px; 
+                display: flex; 
+                justify-content: flex-start; 
+                z-index: 0;
+             }
+            .text_box6 {
+                display: flex;
+                flex-direction: column;
+                .titr6 {
+                    h2 {
+                        @extend .h2_style;
+                        text-align: center;
+                    }
+                }
+                .svg_textbox6 {
+                    text-align: center;
+                }
+                .p_textbox6 {
+                    margin-top: 15px;
+                    margin-bottom: 20px;
+                    p {
+                        @extend .p_style;
+                        text-align: center;
+                        padding-right: 0px;
+                    }
+                }
+
+                .Managed_investing {
+                    @extend .buttom;
+                    justify-content: flex-start;
+                    margin-top: 25px;
+
+                    a {
+                        padding: 11px 17px 12px;
+                    }
+                }
+            }
+
+                //component 7
+
+
+            .background_join_toonie {
+                height: 325px;
+                background-image: url(../img/Group_h4.png);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: 100%;
+            }
+
+         
+             .text_box7 {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                height: 325px;
+                justify-content: flex-start;
+                .titr7 {
+                    padding: 20px;
+                    h2 {
+                        @extend .h2_style;
+                        line-height: 68.53px;
+                        font-family: Futura_PT_Light;
+                    }
+                }
+                .p_textbox7 {   
+                    padding: 28px 29% 0px 25%;
+                    p {
+                        @extend .p_style;
+                        padding-right: 0px;
+                        line-height: 22.312px; /* 155.556% */
+                        letter-spacing: 0.287px;
+                        font-family: poppins_Thin;
+                    
+                    }
+                }
+            }
+
+
+            //////responssive main site
+            @include mediaxxl {
+                .image_57 {
+                    column-gap: 10%;
+                    padding-right: 10%;
+                }
+                .background_image_comp5 { 
+                    margin-top: -345px; 
+                }
+
+            }
+
+            @include mediaxl {
+                .image_57 {
+                    column-gap: 8%;
+                    padding-right: 6%;
+                }
+                .background_image_comp5 { 
+                    margin-top: -270px; 
+                }
+            }
+
+            @include medialg {
+                .image_57 {
+                    column-gap: 5%;
+                    padding-right: 2%;
+                }
+
+                .boximg_tabel_crypto {
+                    padding-left: 0%;
+                }
+
+                .text_box_2 {
+                    padding-left: 10%;
+                }
+                .background_image_comp5 { 
+                    margin-top: -230px; 
+                }
+            }
+        }
+    }
+
+     /////footer
+     .background_image_footer {
+        width: 100%; 
+        position: absolute; 
+        z-index: -2;
+        img {
+            width: 100%; 
+            position: absolute; 
+            z-index: -2;
+        }
+    }
+    footer {
+        padding: 8% 10% 0% 10%;
+        .about_toonie {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            grid-gap: 18px;
+            .about {
+                padding-right: 20%;
+                p {
+                    color: var(--White-mute, #E8F1F2);
+                    font-family: Futura_PT_normal;
+                    font-size: 14.75px;
+                    font-style: normal;
+                    font-weight: 300;
+                    line-height: 19.125px; /* 150% */
+                    margin-bottom: 0rem;
+                }
+    
+            }
+            .icons_so_madia {
+                display: flex;
+                column-gap: 10px;
+            }
+        }
+        .lists_footer {
+            display: flex;
+            justify-content: space-between;
+            .lists_col {
+
+                .ul_list {
+                    list-style: none;
+                    .header_li {
+                        color: #FFF;
+                        font-family: Futura_PT_normal;
+                        font-size: 17.937px;
+                        font-style: normal;
+                        font-weight: 450;
+                        line-height: normal;
+                        letter-spacing: -0.319px;
+                        margin-bottom: 14px;
+                    }
+                    .tag {
+                        margin-bottom: 8px;
+                        a {
+                            color: #FFF;
+                            font-family: Futura_PT_Light;
+                            font-size: 15.75px;
+                            font-style: normal;
+                            font-weight: 300;
+                            line-height: normal;
+                            letter-spacing: -0.255px;
+                            
+                            &:hover {
+                                border-bottom:1px solid white ;
+                            }
+                        }
+                    }
+                }
+            } 
+        }
+        
+    }
+}
