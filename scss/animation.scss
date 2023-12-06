@@ -44,9 +44,33 @@
     }
 }
 
+
+@keyframes slidein_Right {
+    from {
+        transform: translateX(+200px);
+        opacity: 0;
+    }
+    25% {
+        opacity: .25;
+       }
+    50% {
+        opacity: 0.5;
+       }
+    75% {
+        opacity: 0.75;
+    }
+    to {
+        transform: translate(0px);
+        opacity: 1;
+    }
+}
+
 .anim_down {
     animation: slidein 1200ms ease 1s backwards;
 }
 .anim-left {
     animation: slidein_left 1200ms ease 1s backwards;
+}
+.anim-right {
+    animation: slidein_Right 1200ms ease 1s backwards;
 }

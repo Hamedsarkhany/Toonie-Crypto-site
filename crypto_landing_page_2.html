@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+
+    <link rel="stylesheet" href="css/style.css" media="only screen and (min-width: 993px)">
+    <link rel="stylesheet" href="css/mobile_style.css" media="(max-width: 993px)">
+
+
+    <Script src="node_modules/bootstrap/dist/js/bootstrap.js" defer></Script>
+    <Script src="js/main.js" defer></Script>
+
+    <title>crypto_landing_page_2</title>
+</head>
+
+<body class="crypto_landing_page_2">
+    <header class="container-fluid display_none" style="position : absolute;">
+        <div class="header">
+            <div class="row align-items-center">
+                <div class="col-xxl-6 col-xl-6 col-lg-6"> <!--location logo site -->
+                    <div class="logo">
+                        <a href="#"> <img src="img/Frame 1000004298.png" alt="logo_site"> </a>
+                    </div>
+                </div>
+                <!-- menubar site -->
+                <div class="col-xxl-6 col-xl-6 col-lg-6">
+                    <nav class="menu">
+                        <ul class="items">
+                            <li class="item dropdown"> <!-- dropdown menu-->
+                                <a href="">About us
+                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.5 5.25L7 8.75L10.5 5.25" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </a>
+                                
+                                <ul class="dropdown-content">
+                                    <li><a href="#">Link 1</a></li>
+                                    <li><a href="#">Link 2</a></li>
+                                    <li><a href="#">Link 3</a></li>
+                                </ul>
+                            </li>
+                            <li class="item"><a href="">Learn</a></li>
+                            <li class="Sign_Up"><a href="">SignUp</a></li>
+                            <li class="Sign_In"><a href="">login <svg width="14" height="14" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.25 12.75L12.75 5.25" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M5.25 5.25H12.75V12.75" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                </a></li>
+                            <li class="item "><a href="">En</a></li>
+                        </ul>
+                       
+                    </nav>
+                </div>
+                <!-- login & singin & transition -->
+            </div>
+        </div>
+    </header>
+
+
+    <!-- header fot mobile & tablet -->
+    <header class="mobile-header d-lg-none">
+        <div class="container">
+            <div class="row">
+                <div class="mob-heder-row">
+                    <div class="col-7">
+                        <a href="">
+                            <img src="img/Frame_logofooter.png" alt="" style="max-height: 50px;" "="">
+                        </a>
+                    </div>
+                        <div class=" col-5">
+                            <div class="ct-menu-mobile">
+                                <button class="menu-btn" onclick="toggleMenu()">
+                                    <svg width="25" height="25" viewBox="0 0 5 5" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g id="Document">
+                                            <path id="Stroke 1 (Stroke)" fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M1.78076 3.20923C1.78076 3.12654 1.84779 3.05951 1.93048 3.05951H3.37181C3.4545 3.05951 3.52153 3.12654 3.52153 3.20923C3.52153 3.29192 3.4545 3.35895 3.37181 3.35895H1.93048C1.84779 3.35895 1.78076 3.29192 1.78076 3.20923Z"
+                                                fill="white" />
+                                            <path id="Stroke 2 (Stroke)" fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M1.78076 2.45868C1.78076 2.37599 1.84779 2.30896 1.93048 2.30896H3.37181C3.4545 2.30896 3.52153 2.37599 3.52153 2.45868C3.52153 2.54137 3.4545 2.6084 3.37181 2.6084H1.93048C1.84779 2.6084 1.78076 2.54137 1.78076 2.45868Z"
+                                                fill="white" />
+                                            <path id="Stroke 3 (Stroke)" fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M1.78101 1.70822C1.78101 1.62554 1.84804 1.5585 1.93073 1.5585H2.48071C2.5634 1.5585 2.63043 1.62554 2.63043 1.70822C2.63043 1.79091 2.5634 1.85795 2.48071 1.85795H1.93073C1.84804 1.85795 1.78101 1.79091 1.78101 1.70822Z"
+                                                fill="white" />
+                                            <path id="Stroke 4 (Stroke)" fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M1.23462 0.928171C1.54044 0.591037 2.01484 0.475067 2.65416 0.475067C3.29357 0.475067 3.76798 0.591034 4.07378 0.928176C4.37558 1.26091 4.47897 1.773 4.47897 2.47136C4.47897 3.16972 4.37558 3.68182 4.07378 4.01455C3.76798 4.35169 3.29357 4.46766 2.65416 4.46766C2.01484 4.46766 1.54044 4.35169 1.23462 4.01456C0.932796 3.68183 0.829346 3.16973 0.829346 2.47136C0.829346 1.77299 0.932796 1.2609 1.23462 0.928171ZM1.45641 1.12936C1.23475 1.37371 1.12879 1.7849 1.12879 2.47136C1.12879 3.15782 1.23475 3.56902 1.45641 3.81337C1.67407 4.05331 2.03721 4.16821 2.65416 4.16821C3.27121 4.16821 3.63435 4.05331 3.85198 3.81337C4.07361 3.56902 4.17953 3.15784 4.17953 2.47136C4.17953 1.78489 4.07361 1.3737 3.85198 1.12935C3.63435 0.889416 3.27121 0.774512 2.65416 0.774512C2.03721 0.774512 1.67407 0.889413 1.45641 1.12936Z"
+                                                fill="white" />
+                                        </g>
+                                    </svg>
+                                </button>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="dd" class="menu">
+            <div class="logo">
+                <a href="#"> <img src="img/Frame 1000004298.png" alt="logo_site"> </a>
+            </div>
+            <div class="ul-nav">
+                <ul class="list-item">
+                    <li class="item menu-item-130">Home
+                        <?xml version="1.0" encoding="utf-8"?>
+                                <svg width="15px" height="16px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="0" fill="#f9f9f900" width="24" height="24" />
+                                    <g>
+                                        <path fill="#fff" d="M7 10l5 5 5-5" />
+                                    </g>
+                                </svg>
+                        <ul class="sub-menu">
+                            <li><a href=""></a> sub</li>
+                            <li><a href=""></a> sub</li>
+                            <li><a href=""></a> sub</li>
+                            <li><a href=""></a> sub</li>
+                        </ul>
+                    </li>
+                    <li class="item"><a href="">Products</a></li>
+                    <li class="item"><a href="">Docs</a></li>
+                </ul>
+            </div>
+            <!-- login & singin -->
+            <div class="lig_tran" style=" display: flex; justify-content: center; margin-bottom: 15px; grid-gap: 37px;">
+                
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="20" viewBox="0 0 15 16"
+                        fill="none">
+                        <path
+                            d="M6.3249 11.9787H9.41865M6.3249 11.9787L7.20883 14.6305M6.3249 11.9787H1.61858C1.28873 11.9787 1.02133 11.7113 1.02133 11.3815V1.96883C1.02133 1.63898 1.28873 1.37158 1.61858 1.37158H5.87696C6.14241 1.37158 6.376 1.54677 6.45032 1.8016L7.09833 4.02337M9.41865 11.9787L7.20883 14.6305M9.41865 11.9787L7.09833 4.02337M7.20883 14.6305H13.683C14.0129 14.6305 14.2802 14.3631 14.2802 14.0332V4.62061C14.2802 4.29076 14.0129 4.02337 13.683 4.02337H7.09833"
+                            stroke="white" stroke-width="0.716698" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path
+                            d="M6.56489 8.43921C6.5858 8.49356 6.59625 8.53955 6.59625 8.57718C6.59625 8.66497 6.56489 8.74023 6.50218 8.80294C6.43947 8.86565 6.36213 8.897 6.27015 8.897C6.20744 8.897 6.14682 8.88028 6.08829 8.84684C6.03394 8.80921 5.99422 8.75904 5.96914 8.69633L5.61796 7.81837H3.36663L3.00918 8.69633C2.97991 8.75904 2.9381 8.80921 2.88375 8.84684C2.8294 8.88028 2.77087 8.897 2.70816 8.897C2.61619 8.897 2.53884 8.86565 2.47613 8.80294C2.4176 8.73605 2.38834 8.6587 2.38834 8.57091C2.38834 8.5291 2.39879 8.48102 2.41969 8.42667L4.18187 4.21876C4.24458 4.07243 4.34701 3.99927 4.48916 3.99927C4.63966 3.99927 4.74209 4.07243 4.79644 4.21876L6.56489 8.43921ZM5.39847 7.27906L4.5017 5.04654L3.58612 7.27906H5.39847Z"
+                            fill="white" stroke="white" stroke-width="0.0597248" stroke-linejoin="round" />
+                        <path
+                            d="M12.4468 8.04574C12.4468 8.07039 12.4401 8.10545 12.4269 8.15095C12.4155 8.19455 12.3994 8.24004 12.3785 8.28743C12.3596 8.33292 12.3378 8.37462 12.3131 8.41254C12.2904 8.45045 12.2667 8.47414 12.2421 8.48362C11.9634 8.59356 11.7141 8.71014 11.4943 8.83335C11.2744 8.95656 11.0877 9.08925 10.9341 9.23142C10.7806 9.37169 10.663 9.52239 10.5815 9.68351C10.5 9.84274 10.4593 10.0143 10.4593 10.1982C10.4593 10.3972 10.5019 10.5687 10.5872 10.7128C10.6725 10.8569 10.7938 10.9772 10.9512 11.0739C11.1085 11.1706 11.299 11.2445 11.5227 11.2957C11.7483 11.3469 11.9994 11.38 12.2762 11.3952C12.3956 11.4028 12.5074 11.4056 12.6117 11.4037C12.7178 11.4018 12.8145 11.398 12.9017 11.3924C12.9889 11.3886 13.0647 11.3829 13.1292 11.3753C13.1936 11.3696 13.2448 11.3649 13.2827 11.3611C13.313 11.3611 13.3282 11.3876 13.3282 11.4407C13.3282 11.4824 13.3244 11.5127 13.3168 11.5317C13.3093 11.5506 13.296 11.563 13.277 11.5686C13.1879 11.6085 13.0913 11.6464 12.987 11.6824C12.8847 11.7203 12.7804 11.7535 12.6742 11.7819C12.57 11.8122 12.4667 11.8359 12.3643 11.853C12.2639 11.8719 12.171 11.8814 12.0857 11.8814C11.7122 11.8814 11.4033 11.8426 11.1587 11.7648C10.9142 11.689 10.719 11.5829 10.573 11.4464C10.4289 11.3118 10.3275 11.1526 10.2688 10.9687C10.2119 10.7867 10.1835 10.5886 10.1835 10.3744C10.1835 10.1716 10.2062 9.98775 10.2517 9.82283C10.2991 9.65792 10.3579 9.51007 10.428 9.37927C10.5 9.24848 10.5787 9.13475 10.664 9.03807C10.7512 8.9395 10.8346 8.85515 10.9142 8.78501C10.8365 8.749 10.7588 8.7035 10.6811 8.64853C10.6033 8.59356 10.5332 8.5329 10.4706 8.46656C10.4081 8.39832 10.3569 8.32724 10.3171 8.25331C10.2792 8.17749 10.2602 8.10166 10.2602 8.02584C10.2602 7.94812 10.2716 7.86661 10.2944 7.78131C10.3171 7.69601 10.3484 7.61356 10.3882 7.53394C10.4299 7.45243 10.4792 7.37566 10.536 7.30363C10.5929 7.2297 10.6555 7.16525 10.7237 7.11028C10.7919 7.05531 10.8649 7.01171 10.9426 6.97949C11.0204 6.94726 11.1009 6.93115 11.1843 6.93115C11.2753 6.93115 11.3559 6.93968 11.426 6.95674C11.498 6.97191 11.5625 6.99276 11.6194 7.0193C11.6762 7.04394 11.7265 7.07237 11.7701 7.1046C11.8137 7.13682 11.8544 7.1681 11.8923 7.19843C11.9245 7.22307 11.9463 7.24866 11.9577 7.2752C11.9691 7.29984 11.9748 7.33965 11.9748 7.39462C11.9748 7.46096 11.9558 7.49413 11.9179 7.49413C11.9027 7.49413 11.8791 7.48466 11.8468 7.4657C11.8165 7.44675 11.7786 7.42684 11.7331 7.40599C11.6895 7.38324 11.6402 7.36239 11.5852 7.34344C11.5322 7.32448 11.4753 7.315 11.4146 7.315C11.3502 7.315 11.2782 7.32543 11.1985 7.34628C11.1189 7.36713 11.0393 7.39746 10.9597 7.43727C10.882 7.47518 10.8081 7.52162 10.7379 7.57659C10.6697 7.63156 10.6147 7.69412 10.573 7.76425C10.573 7.80785 10.5863 7.85334 10.6128 7.90073C10.6413 7.94623 10.6782 7.99172 10.7237 8.03721C10.7692 8.08271 10.8204 8.12631 10.8772 8.16801C10.9341 8.20781 10.991 8.24383 11.0478 8.27605C11.1066 8.30638 11.1625 8.33103 11.2156 8.34998C11.2687 8.36704 11.3142 8.37557 11.3521 8.37557C11.3748 8.37557 11.4014 8.37178 11.4317 8.3642C11.4639 8.35472 11.499 8.34335 11.5369 8.33008C11.5748 8.31491 11.6146 8.2988 11.6563 8.28174C11.698 8.26279 11.7388 8.24383 11.7786 8.22487L12.3444 7.98888C12.3823 7.97182 12.4089 7.96897 12.424 7.98035C12.4392 7.99172 12.4468 8.01352 12.4468 8.04574Z"
+                            fill="white" stroke="white" stroke-width="0.179175" stroke-linejoin="round" />
+                    </svg>
+                </div>
+            </div>
+            <div class="sing_up_in">
+                <div class="Sign_Up">
+                    <a href="">Sign Up</a>
+                </div>
+                <div class="Sign_In">
+                    <a href="">Sign In</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- main page -->
+    <main class="container-fluid">
+        <div class="main">
+            <div class="back_site_blur"> <!--section blur & title first site-->
+                
+                <div class="title_site">
+                    <div class="text_p">
+                        <p>0% trading commission</p>
+                    </div>
+                    <div class="titr">
+                        <h1 class="slide-in-dow">INDIA'S MOST <br> TRUSTED BITCOIN & <br> <span> CRYPTOCURRENCY </span>  <br> EXCHANGE</h1>
+                    </div>
+                    <div class="subtitr">
+                        <h4>Buy, Sell & Trade Bitcoin, Ethereum, Ripple, Litecoin and <br> more cryptocurrencies in India. Start trading now!</h4>
+                    </div>
+                    
+                    <div class="button_start">
+                        <a href="">Dashboard
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 18 18" fill="none">
+                                <path d="M5.25 12.75L12.75 5.25" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M5.25 5.25H12.75V12.75" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="boxs_live_cryoto">
+                        <div class="box">
+                            <p class="symbol">ETH 
+                                <sub> <svg xmlns="http://www.w3.org/2000/svg" width="6" height="6" viewBox="0 0 6 6" fill="none">
+                                        <circle cx="3" cy="3" r="3" fill="#38ABDA" fill-opacity="0.4"/>
+                                        <circle cx="3" cy="3" r="1.5" fill="#348DCD"/>
+                                    </svg>live
+                                </sub>
+                            </p>
+                            <p class="price">₹203839.47 
+                                <sub>
+                                    +2.06% 
+                                </sub>
+                            </p>
+                        </div>
+                        <div class="box .border">
+                            <p class="symbol">USDT 
+                                <sub> <svg xmlns="http://www.w3.org/2000/svg" width="6" height="6" viewBox="0 0 6 6" fill="none">
+                                        <circle cx="3" cy="3" r="3" fill="#38ABDA" fill-opacity="0.4"/>
+                                        <circle cx="3" cy="3" r="1.5" fill="#348DCD"/>
+                                    </svg>live
+                                </sub>
+                            </p>
+                            <p class="price">₹203839.47 
+                                <sub>
+                                    +2.06% 
+                                </sub>
+                            </p>
+                        </div>
+                        <div class="box" >
+                            <p class="symbol">BTC 
+                                <sub> <svg xmlns="http://www.w3.org/2000/svg" width="6" height="6" viewBox="0 0 6 6" fill="none">
+                                        <circle cx="3" cy="3" r="3" fill="#38ABDA" fill-opacity="0.4"/>
+                                        <circle cx="3" cy="3" r="1.5" fill="#348DCD"/>
+                                    </svg>live
+                                </sub>
+                            </p>
+                            <p class="price">₹302085557.96
+                                <sub>
+                                    +2.06% 
+                                </sub>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="background_image_two_iphone">
+                    <img src="img/backtwomobileilhone.png" alt="">
+                </div>
+            </div>
+            
+           
+
+
+            <div class="Separator_35 display_none"></div> <!--Separator of two parts -->
+           
+            <div class="container-fluid"> <!-- component one  -->
+                <div class="row  flex-lg-row-reverse">
+                    <!-- text box -->
+                    <div class="col-xxl-6 col-xl-6 col-lg-6 col-12 col-md-12 col-sm-12 col-12">
+                        <div class="text_box_1">
+                            <div class="titr1"> 
+                                <h2> Reasons to invest in <br> cryptocurrencies in 2022 </h2>
+                            </div>
+                            <div class="p_textbox_1">
+                                <h4>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 25 25" fill="none">
+                                        <g clip-path="url(#clip0_95_628)">
+                                        <path d="M12 0C5.38293 0 0 5.38293 0 12C0 18.6171 5.38293 24 12 24C18.6171 24 24 18.6171 24 12C24 5.38293 18.6171 0 12 0Z" fill="white"/>
+                                        <path d="M10.1818 14.1828L7.79545 11.8321L7 12.6157L10.1818 15.75L17 9.03358L16.2045 8.25L10.1818 14.1828Z" fill="#0C141F" stroke="#0C141F" stroke-width="2"/>
+                                        </g>
+                                        <defs>
+                                        <clipPath id="clip0_95_628">
+                                        <rect width="24" height="24" fill="white"/>
+                                        </clipPath>
+                                        </defs>
+                                    </svg>
+                                    Buying Bitcoin is legal
+                                </h4>
+                                <p>
+                                    The Supreme Court judgement turned in favour of Indian Investors making investing incryptocurrency legal.
+                                </p>
+                            </div>
+                            <div class="p_textbox_1">
+                                <h4>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 25 25" fill="none">
+                                        <g clip-path="url(#clip0_95_628)">
+                                        <path d="M12 0C5.38293 0 0 5.38293 0 12C0 18.6171 5.38293 24 12 24C18.6171 24 24 18.6171 24 12C24 5.38293 18.6171 0 12 0Z" fill="white"/>
+                                        <path d="M10.1818 14.1828L7.79545 11.8321L7 12.6157L10.1818 15.75L17 9.03358L16.2045 8.25L10.1818 14.1828Z" fill="#0C141F" stroke="#0C141F" stroke-width="2"/>
+                                        </g>
+                                        <defs>
+                                        <clipPath id="clip0_95_628">
+                                        <rect width="24" height="24" fill="white"/>
+                                        </clipPath>
+                                        </defs>
+                                    </svg>
+                                    Buying Bitcoin is legal
+                                </h4>
+                                <p>
+                                    The Supreme Court judgement turned in favour of Indian Investors making investing incryptocurrency legal.
+                                </p>
+                            </div>
+                            <div class="p_textbox_1">
+                                <h4>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 25 25" fill="none">
+                                        <g clip-path="url(#clip0_95_628)">
+                                        <path d="M12 0C5.38293 0 0 5.38293 0 12C0 18.6171 5.38293 24 12 24C18.6171 24 24 18.6171 24 12C24 5.38293 18.6171 0 12 0Z" fill="white"/>
+                                        <path d="M10.1818 14.1828L7.79545 11.8321L7 12.6157L10.1818 15.75L17 9.03358L16.2045 8.25L10.1818 14.1828Z" fill="#0C141F" stroke="#0C141F" stroke-width="2"/>
+                                        </g>
+                                        <defs>
+                                        <clipPath id="clip0_95_628">
+                                        <rect width="24" height="24" fill="white"/>
+                                        </clipPath>
+                                        </defs>
+                                    </svg>
+                                    Buying Bitcoin is legal
+                                </h4>
+                                <p>
+                                    The Supreme Court judgement turned in favour of Indian Investors making investing incryptocurrency legal.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- boximg_tabel_crypto -->
+                    <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                        <div class="boximg_tabel_crypto">
+                            <img src="img/portfolio_chaert_page_2.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="Separator_50 d-none d-lg-block"></div> <!--Separator of two parts -->
+
+            <div class="container"> <!-- component tow -->
+                <div class="row">
+                    <!-- text box -->
+                    <div class="col-xxl-12 col-xl-12 col-lg-12 col-12 col-md-12 col-sm-12 col-12">
+                        <div class="text_box2">
+                            <div class="titr2">
+                                <h2>Why should you choose <br> tonei-- for trading?</h2>
+                            </div>
+                            <div class="description_boxs">
+                                <div class="de_box">
+                                    <img src="img/Frame_des_box1.png" alt="">
+                                    <h5>Easy deposit & withdrawals</h5>
+                                    <p>Quickly add & withdraw funds to your bank account</p>
+                                </div>
+                                <div class="de_box">
+                                    <img src="img/Frame_des_box2.png" alt="">
+                                    <h5>Fast & simple</h5>
+                                    <p>Start investing in under 10 minutes</p>
+                                </div>
+                                <div class="de_box">
+                                    <img src="img/Frame_des_box3.png" alt="">
+                                    <h5>Safe & secure</h5>
+                                    <p>World class security features ensure your investments are in safe hands</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="background_image_comp3 ">
+                <img style="width: 100%;" src="img/Group 13597.png" alt="">
+            </div>
+            <div class="Separator_50"></div> <!--Separator of two parts -->
+        
+
+            <div class="container-fluid container-lg"> <!-- component three -->
+                <div class="row flex-md-row-reverse">
+                    <div class="titr3">
+                        <h2>What our customers say!</h2>
+                    </div>
+                    <!-- text box -->
+                    <div class="col-xxl-6 col-xl-6 col-lg-6 col-12 col-md-6 col-sm-12">
+                        <div class="text_box3">
+                            <div class="p_textbox3">
+                                <h5>
+                                    I entered the market with "Crypto is a scam!" phrase and mindset. My first exchange was Bitbns and i was pretty scared
+                                </h5>
+                                <p>
+                                    Year after year the trust developed and by now believe me I dug into the whole team and was mesmerized how SwapX was created..
+                                </p>
+                            </div>
+                            <div class="Managed_investing">
+                                <a href="">CONTACT US</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xxl-6 col-xl-6 col-lg-6 col-12 col-md-6 col-sm-12 padding-0">
+                        <div class="boximg_present">
+                            <img src="img/Rectangle_pag2.png" alt="">
+                            <div class="box_text">
+                                <h5>
+                                    “ <br> i’m happy to be a part of tonei <br> &emsp; &emsp; &emsp; “
+                                </h5>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="container-fluid container-lg"> <!-- component four -->
+                <div class="row flex-md-row-reverse">
+                    <div class="titr3">
+                        <h2>Frequently Asked Questions</h2>
+                    </div>
+                    <!-- accordion box -->
+                    <div class="col-xxl-12 col-xl-12 col-lg-12 col-12 col-md-6 col-sm-12">
+                        <div class="accordion_box4">
+                            <section class="faq-container" aria-label="Frequently Asked Questions">
+                                <details>
+                                    <summary>
+                                        <span class="faq-title">How long does the course take?</span>
+                                        <!-- Plus Icon -->
+                                        <svg class="icon icon-tabler icon-tabler-circle-plus expand-icon" width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect width="37" height="37" fill="#385E8E"/>
+                                            <path d="M13.75 19H24.25" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M19 24.25L19 13.75" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg> 
+                                        <!-- Minus Icon -->
+                                        <svg class="icon icon-tabler icon-tabler-circle-minus expand-icon" width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect width="37" height="37" fill="#385E8E"/>
+                                            <path d="M13.75 19H24.25" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>  
+                                    </summary>
+                                    <div class="faq-content">
+                                        The course is designed to be self-paced, but typically takes about 5 hours to complete.
+                                    </div>
+                                </details>
+
+                                <details>
+                                    <summary>
+                                        <span class="faq-title">How long does the course take?</span>
+                                        <!-- Plus Icon -->
+                                        <svg class="icon icon-tabler icon-tabler-circle-plus expand-icon" width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect width="37" height="37" fill="#385E8E"/>
+                                            <path d="M13.75 19H24.25" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M19 24.25L19 13.75" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg> 
+                                        <!-- Minus Icon -->
+                                        <svg class="icon icon-tabler icon-tabler-circle-minus expand-icon" width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect width="37" height="37" fill="#385E8E"/>
+                                            <path d="M13.75 19H24.25" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>  
+                                    </summary>
+                                    <div class="faq-content">
+                                        The course is designed to be self-paced, but typically takes about 5 hours to complete.
+                                    </div>
+                                </details>
+
+                                <details>
+                                    <summary>
+                                        <span class="faq-title">How long does the course take?</span>
+                                        <!-- Plus Icon -->
+                                        <svg class="icon icon-tabler icon-tabler-circle-plus expand-icon" width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect width="37" height="37" fill="#385E8E"/>
+                                            <path d="M13.75 19H24.25" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M19 24.25L19 13.75" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg> 
+                                        <!-- Minus Icon -->
+                                        <svg class="icon icon-tabler icon-tabler-circle-minus expand-icon" width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect width="37" height="37" fill="#385E8E"/>
+                                            <path d="M13.75 19H24.25" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>  
+                                    </summary>
+                                    <div class="faq-content">
+                                        The course is designed to be self-paced, but typically takes about 5 hours to complete.
+                                    </div>
+                                </details>
+
+                                <details>
+                                    <summary>
+                                        <span class="faq-title">How long does the course take?</span>
+                                        <!-- Plus Icon -->
+                                        <svg class="icon icon-tabler icon-tabler-circle-plus expand-icon" width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect width="37" height="37" fill="#385E8E"/>
+                                            <path d="M13.75 19H24.25" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M19 24.25L19 13.75" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg> 
+                                        <!-- Minus Icon -->
+                                        <svg class="icon icon-tabler icon-tabler-circle-minus expand-icon" width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect width="37" height="37" fill="#385E8E"/>
+                                            <path d="M13.75 19H24.25" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>  
+                                    </summary>
+                                    <div class="faq-content">
+                                        The course is designed to be self-paced, but typically takes about 5 hours to complete.
+                                    </div>
+                                </details>
+
+                                <details>
+                                    <summary>
+                                        <span class="faq-title">How long does the course take?</span>
+                                        <!-- Plus Icon -->
+                                        <svg class="icon icon-tabler icon-tabler-circle-plus expand-icon" width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect width="37" height="37" fill="#385E8E"/>
+                                            <path d="M13.75 19H24.25" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M19 24.25L19 13.75" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg> 
+                                        <!-- Minus Icon -->
+                                        <svg class="icon icon-tabler icon-tabler-circle-minus expand-icon" width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect width="37" height="37" fill="#385E8E"/>
+                                            <path d="M13.75 19H24.25" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>  
+                                    </summary>
+                                    <div class="faq-content">
+                                        The course is designed to be self-paced, but typically takes about 5 hours to complete.
+                                    </div>
+                                </details>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+     
+        </div>
+    </main>
+    
+
+
+    <footer class="container-fluid">
+        <div class="row  flex-md-row-reverse">
+            <div class="col-xxl-6 col-xl-6 col-lg-6 col-12 col-md-12 col-sm-12 col-12">
+                <div class="about_toonie"> <!--col about_toonie--> 
+                    <div class="about">
+                        <img src="img/image_app_store.png" alt="">
+                        <img src="img/image_google_play.png" alt="">
+                    </div>
+                    <div class="icons_so_madia">
+                        <div class="made"><p>Made with ❤️</p></div>
+                        <div class="madia">
+                            <div class="icon_facebook">
+                                <a href="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+                                        <g clip-path="url(#clip0_95_727)">
+                                          <path fill-rule="evenodd" clip-rule="evenodd" d="M10.1579 20.3937L10.167 20.3938H10.1639L10.1579 20.3937ZM10.2298 20.3938H10.2268L10.2358 20.3937L10.2298 20.3938ZM10.1268 20.3936H10.1366H10.131H10.1268ZM10.2628 20.3936H10.2571H10.267H10.2628ZM10.0967 20.3933L10.1033 20.3934L10.0981 20.3933H10.0967ZM10.2957 20.3933L10.2905 20.3934L10.297 20.3933H10.2957ZM10.3286 20.3929H10.3263L10.3351 20.3928L10.3286 20.3929ZM10.0586 20.3928L10.0675 20.3929H10.0652L10.0586 20.3928ZM10.3615 20.3924L10.3561 20.3925L10.3671 20.3923L10.3615 20.3924ZM10.0267 20.3923L10.0377 20.3925L10.0323 20.3924L10.0267 20.3923ZM10.3943 20.3919L10.3871 20.392L10.3971 20.3918L10.3943 20.3919ZM9.9966 20.3918L10.0067 20.392L9.99948 20.3919L9.9966 20.3918ZM9.95928 20.391L9.96825 20.3912H9.96666L9.95928 20.391ZM10.4271 20.3912H10.4255L10.4345 20.391L10.4271 20.3912ZM9.92654 20.3902L9.93885 20.3905L9.93387 20.3904L9.92654 20.3902ZM10.4599 20.3904L10.4549 20.3905L10.4672 20.3902L10.4599 20.3904ZM10.4927 20.3896L10.4846 20.3898L10.4973 20.3894L10.4927 20.3896ZM9.89651 20.3894L9.90909 20.3898L9.90109 20.3896L9.89651 20.3894ZM9.86783 20.3886L9.87679 20.3889L9.86835 20.3886L9.86062 20.3883L9.86783 20.3886ZM10.5254 20.3886L10.517 20.3889L10.5259 20.3886L10.5332 20.3883L10.5254 20.3886ZM10.5582 20.3874L10.5537 20.3876L10.5674 20.3871L10.5582 20.3874ZM9.82637 20.3871L9.84011 20.3876L9.83564 20.3874L9.82637 20.3871ZM9.79653 20.386L9.81095 20.3865L9.80294 20.3863L9.79653 20.386ZM10.5908 20.3863L10.5828 20.3865L10.5972 20.386L10.5908 20.3863ZM9.76725 20.3848L9.78136 20.3854L9.77032 20.385L9.76725 20.3848ZM10.6234 20.385L10.6124 20.3854L10.6265 20.3848L10.6234 20.385ZM9.72623 20.3831L9.74136 20.3838L9.73766 20.3836L9.72623 20.3831ZM10.6561 20.3836L10.6524 20.3838L10.6676 20.3831L10.6561 20.3836ZM9.69679 20.3817L9.71249 20.3824L9.70508 20.3821L9.69679 20.3817ZM10.6887 20.3821L10.6812 20.3824L10.6969 20.3817L10.6887 20.3821ZM9.66779 20.3802L9.68361 20.381L9.67249 20.3805L9.66779 20.3802ZM10.7213 20.3805L10.7102 20.381L10.726 20.3802L10.7213 20.3805ZM10.7538 20.3788L10.7395 20.3796L10.7522 20.3789L10.7673 20.3781L10.7538 20.3788ZM9.64155 20.3789L9.65433 20.3796L9.63992 20.3788L9.62649 20.3781L9.64155 20.3789ZM10.7864 20.3769L10.7799 20.3773L10.7962 20.3764L10.7864 20.3769ZM9.59761 20.3764L9.61378 20.3773L9.60741 20.3769L9.59761 20.3764ZM9.56885 20.3747L9.58499 20.3756L9.57491 20.3751L9.56885 20.3747ZM10.8189 20.3751L10.8088 20.3756L10.8249 20.3747L10.8189 20.3751ZM9.54141 20.373L9.55595 20.3739L9.5424 20.3731L9.52878 20.3721L9.54141 20.373ZM10.8513 20.3731L10.8379 20.3739L10.8523 20.373L10.865 20.3721L10.8513 20.3731ZM10.8837 20.3709L10.8789 20.3712L10.8943 20.3702L10.8837 20.3709ZM9.49943 20.3702L9.51484 20.3712L9.50999 20.3709L9.49943 20.3702ZM9.47071 20.3683L9.48585 20.3693L9.47756 20.3688L9.47071 20.3683ZM10.9162 20.3688L10.9079 20.3693L10.923 20.3683L10.9162 20.3688ZM9.44208 20.3662L9.45598 20.3671L9.44518 20.3664L9.44208 20.3662ZM10.9486 20.3664L10.9378 20.3671L10.9517 20.3662L10.9486 20.3664ZM9.40355 20.3633L9.41575 20.3642L9.41279 20.364L9.40355 20.3633ZM10.9809 20.364L10.9781 20.3642L10.9902 20.3633L10.9809 20.364ZM11.0132 20.3615L11.0074 20.3619L11.0199 20.3609L11.0132 20.3615ZM9.37392 20.3609L9.38631 20.3619L9.3805 20.3615L9.37392 20.3609ZM9.34504 20.3586L9.35556 20.3595L9.34815 20.3589L9.34504 20.3586ZM11.0456 20.3589L11.0382 20.3595L11.0487 20.3586L11.0456 20.3589ZM9.31326 20.3559L9.3164 20.3562L9.31589 20.3561L9.31326 20.3559ZM11.0779 20.3561L11.0774 20.3562L11.0805 20.3559L11.0779 20.3561ZM11.1101 20.3534L11.1073 20.3536L11.1145 20.353L11.1101 20.3534ZM9.27928 20.353L9.28649 20.3536L9.28362 20.3534L9.27928 20.353ZM9.24941 20.3502L9.25478 20.3507L9.25144 20.3504L9.24941 20.3502ZM11.1423 20.3504L11.139 20.3507L11.1444 20.3502L11.1423 20.3504ZM8.60362 20.2698C3.73146 19.504 0 15.2828 0 10.1969C0 4.56908 4.56908 0 10.1969 0C15.8246 0 20.3938 4.56908 20.3938 10.1969C20.3938 15.2828 16.6623 19.504 11.7901 20.2698V13.1444H14.1661L14.6181 10.1969H11.7901V8.28413C11.7901 7.47774 12.1852 6.6917 13.4518 6.6917H14.7377V4.18231C14.7377 4.18231 13.5708 3.98316 12.4551 3.98316C10.1259 3.98316 8.60362 5.39479 8.60362 7.95038V10.1969H6.01457V13.1444H8.60362V20.2698Z" fill="white"/>
+                                        </g>
+                                        <defs>
+                                          <clipPath id="clip0_95_727">
+                                            <rect width="20.3938" height="20.3938" fill="white"/>
+                                          </clipPath>
+                                        </defs>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="icon_linkedin">
+                                <a href="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="21" viewBox="0 0 22 21" fill="none">
+                                        <g clip-path="url(#clip0_95_733)">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10.9845 0C16.6122 0 21.1814 4.56908 21.1814 10.1969C21.1814 15.8246 16.6122 20.3938 10.9845 20.3938C5.35668 20.3938 0.787598 15.8246 0.787598 10.1969C0.787598 4.56908 5.35668 0 10.9845 0ZM7.79647 15.9275V7.96432H5.14911V15.9275H7.79647ZM17.3409 15.9275V11.361C17.3409 8.91494 16.035 7.77707 14.2935 7.77707C12.8892 7.77707 12.2602 8.54937 11.908 9.09179V7.96432H9.26129C9.29637 8.71144 9.26129 15.9275 9.26129 15.9275H11.9079V11.4803C11.9079 11.2423 11.925 11.0043 11.9952 10.8342C12.1862 10.3588 12.622 9.86632 13.3532 9.86632C14.3106 9.86632 14.6941 10.5968 14.6941 11.6669V15.9275H17.3409ZM6.49068 4.12456C5.58491 4.12456 4.99314 4.72004 4.99314 5.50054C4.99314 6.26459 5.56691 6.87648 6.45563 6.87648H6.47271C7.39582 6.87648 7.97038 6.26459 7.97038 5.50054C7.95325 4.72004 7.39585 4.12456 6.49068 4.12456Z" fill="white"/>
+                                        </g>
+                                        <defs>
+                                        <clipPath id="clip0_95_733">
+                                        <rect width="20.3938" height="20.3938" fill="white" transform="translate(0.787598)"/>
+                                        </clipPath>
+                                        </defs>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="icon_twitter">
+                                <a href="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+                                        <g clip-path="url(#clip0_95_730)">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10.5904 0C16.2182 0 20.7873 4.56908 20.7873 10.1969C20.7873 15.8246 16.2182 20.3938 10.5904 20.3938C4.96263 20.3938 0.393555 15.8246 0.393555 10.1969C0.393555 4.56908 4.96263 0 10.5904 0ZM8.79439 15.6203C13.3066 15.6203 15.7738 11.8813 15.7738 8.64086C15.7738 8.53403 15.7738 8.4272 15.7687 8.32544C16.247 7.97954 16.6641 7.54713 16.9947 7.05369C16.5572 7.24699 16.0841 7.37928 15.5856 7.4403C16.0943 7.13506 16.481 6.65689 16.6641 6.08208C16.191 6.36185 15.6671 6.56531 15.1074 6.67724C14.6597 6.19906 14.0238 5.90403 13.3168 5.90403C11.9636 5.90403 10.8648 7.00283 10.8648 8.35599C10.8648 8.54929 10.8852 8.73749 10.9309 8.91554C8.89106 8.81381 7.08513 7.8371 5.87446 6.35166C5.66586 6.71285 5.54377 7.13506 5.54377 7.58274C5.54377 8.43226 5.97618 9.18516 6.63751 9.62263C6.23561 9.61248 5.85916 9.50055 5.52852 9.31744V9.34795C5.52852 10.5383 6.37295 11.5252 7.49719 11.7541C7.29373 11.81 7.07498 11.8406 6.85117 11.8406C6.69343 11.8406 6.54084 11.8253 6.38825 11.7948C6.69853 12.7715 7.60402 13.4786 8.67741 13.4989C7.83803 14.1552 6.77995 14.547 5.63025 14.547C5.43185 14.547 5.23855 14.5368 5.04524 14.5113C6.11862 15.2133 7.41072 15.6203 8.79439 15.6203Z" fill="white"/>
+                                        </g>
+                                        <defs>
+                                        <clipPath id="clip0_95_730">
+                                        <rect width="20.3938" height="20.3938" fill="white" transform="translate(0.393555)"/>
+                                        </clipPath>
+                                        </defs>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-xxl-6 col-xl-6 col-lg-6 col-12 col-md-12 col-sm-12 col-12">
+                <div class="lists_footer"><!--col lists_footer -->
+                  <p>Terms & Condition</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -12,7 +12,14 @@
     font-family: Futura_PT_normal;
     src: url(../font/FuturaCyrillicMedium.ttf) format('truetype');
 }
+@font-face {
+    font-family: Futura_PT_Bold;
+    src: url(../font/FuturaCyrillicBold.ttf) format('truetype');
+}
 
+
+
+///////////////poppins
 @font-face {
     font-family: poppins_normal;
     src: url(../font/Poppins-Medium.ttf) format('truetype');
@@ -29,6 +36,29 @@
     font-family: poppins_Thin;
     src: url(../font/Poppins-Thin.ttf) format('truetype');
 }
+
+/////////////InterDisplay
+@font-face {
+    font-family: InterDisplay_Black;
+    src: url(../font/InterDisplay-Black.woff2) format('woff2');
+}
+@font-face {
+    font-family: InterDisplay_Bold;
+    src: url(../font/InterDisplay-Bold.woff2) format('woff2');
+}
+@font-face {
+    font-family: InterDisplay_Medium;
+    src: url(../font/InterDisplay-Medium.woff2) format('.woff2');
+}
+@font-face {
+    font-family: InterDisplay_Regular;
+    src: url(../font/InterDisplay-Regular.woff2) format('woff2');
+}
+@font-face {
+    font-family: InterDisplay_Thin;
+    src: url(../font/InterDisplay-Thin.woff2) format('woff2');
+}
+
 
 a {
     text-decoration: none;
@@ -77,6 +107,7 @@ $btn_color : #284972;
         padding: 11px 50px 12px;
     }
 }
+
 .buttom_mo {
     display: flex;
     justify-content: center;
@@ -114,4 +145,36 @@ $btn_color : #284972;
 
 .padding-0 {
     padding: 0px;
+}
+
+/////new page style
+
+.p_style_2 {
+    color: #FFF;
+    font-family: InterDisplay_Regular;
+    font-size: 14.344px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32.874px;
+    letter-spacing: 0.857px;
+    text-align: start;
+}
+
+.h2_style_2 {
+    font-family: Futura_PT_Bold;
+    color: var(--primary-dark, #284972);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 57px; /* 237.5% */
+}
+.buttom_2 {
+    border-radius: 4px 4px 4px 20px;
+    padding: 5px 33px 7px;
+    background: #37659E;
+    text-align: center;
+    a {
+        
+        color: #FFF;
+    }
 }
