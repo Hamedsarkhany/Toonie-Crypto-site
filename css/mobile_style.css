@@ -1503,4 +1503,173 @@ body.crypto_landing_page_2 footer .lists_footer p {
   font-family: InterDisplay_Regular;
 }
 
+body.dashboard {
+  background-image: url(../img/Group_backgrund_dash.png);
+  background-color: #09111B;
+  background-repeat: no-repeat;
+  /* Show menu in open state */
+}
+body.dashboard .sidebar {
+  background: #09111B;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-right: 1px solid;
+}
+body.dashboard .sidebar .logo {
+  margin: 25px 0 50px 35px;
+  width: 60%;
+}
+body.dashboard .sidebar .detail_profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 20px;
+}
+body.dashboard .sidebar .detail_profile .Profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body.dashboard .sidebar .detail_profile .Profile .photo_user {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 100px;
+  overflow: hidden;
+  width: 86px;
+  margin-bottom: 15px;
+}
+body.dashboard .sidebar .detail_profile .Profile .photo_user .MuiAvatar_root {
+  border-radius: 50%;
+  overflow: hidden;
+  user-select: none;
+  width: 85px;
+  height: 83px;
+  position: relative;
+  top: 20px;
+}
+body.dashboard .sidebar .detail_profile .Profile .photo_user .MuiAvatar_root img {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  object-fit: cover;
+  color: transparent;
+  text-indent: 10000px;
+}
+body.dashboard .sidebar .detail_profile .Profile .photo_user .MuiBox_root {
+  width: 100%;
+  height: 20px;
+  background-color: #284972;
+  opacity: 0.8;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body.dashboard .sidebar .detail_profile .Profile .photo_user .MuiBox_root span {
+  color: #FFF;
+  text-align: center;
+  font-family: Futura_PT_normal;
+  font-size: 14px;
+}
+body.dashboard .sidebar .detail_profile .Profile .name_user h3 {
+  color: #F5F6FF;
+  /* popinse/desktop/lable/demibold */
+  font-family: poppins_normal;
+  font-size: 16px;
+}
+body.dashboard .sidebar .detail_profile .banner {
+  margin-bottom: 25px;
+}
+body.dashboard .sidebar .item-dashbord .list_items_dash {
+  list-style: none;
+  display: flex;
+  padding-left: 0rem;
+  flex-direction: column;
+  margin-left: -4px;
+}
+body.dashboard .sidebar .item-dashbord .list_items_dash .item_dash {
+  font-family: poppins_Regular;
+  font-size: 16px;
+  border-radius: 8px;
+}
+body.dashboard .sidebar .item-dashbord .list_items_dash .item_dash a {
+  color: #777;
+  padding: 15px 35px 15px 25px;
+  display: block;
+}
+body.dashboard .sidebar .item-dashbord .list_items_dash .item_dash a svg {
+  margin-right: 16px;
+  fill: #777777;
+}
+body.dashboard .sidebar .item-dashbord .list_items_dash .item_dash:hover, body.dashboard .sidebar .item-dashbord .list_items_dash .item_dash:active {
+  background: var(--Primary-Dark, #284972);
+}
+body.dashboard .sidebar .item-dashbord .list_items_dash .item_dash:hover a, body.dashboard .sidebar .item-dashbord .list_items_dash .item_dash:active a {
+  color: #ffffff;
+}
+body.dashboard .sidebar .item-dashbord .list_items_dash .item_dash:hover a svg, body.dashboard .sidebar .item-dashbord .list_items_dash .item_dash:active a svg {
+  margin-right: 16px;
+  fill: rgb(255, 255, 255) !important;
+}
+body.dashboard .mobile-header {
+  height: 84px;
+  align-items: center;
+  display: flex;
+  z-index: 3;
+  position: fixed;
+  width: 100%;
+}
+body.dashboard .mob-heder-row {
+  display: flex;
+  align-items: center;
+}
+body.dashboard .ct-menu-mobile {
+  display: flex;
+  justify-content: flex-end;
+  grid-gap: 25px;
+}
+body.dashboard .menu {
+  height: 100vh;
+  width: 68%;
+  top: 0;
+  left: -100%;
+  transition: all 0.3s ease-in;
+  position: absolute;
+  overflow: scroll;
+}
+body.dashboard .menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  flex-direction: column;
+}
+body.dashboard .menu ul li {
+  margin: 10px 7px;
+}
+body.dashboard .menu ul li a {
+  display: block;
+  padding: 0px 35px;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 18px;
+}
+body.dashboard .show {
+  left: -4px;
+  transition: all 0.3s ease-in;
+  z-index: 10;
+}
+body.dashboard .menu-btn {
+  width: 30%;
+  position: relative;
+  left: -8%;
+  z-index: 11;
+  border: solid #9d9d9d 0px;
+  border-radius: 8px;
+  top: -2px;
+  display: block;
+  background: rgba(9, 17, 27, 0);
+}
+
 /*# sourceMappingURL=mobile_style.css.map */

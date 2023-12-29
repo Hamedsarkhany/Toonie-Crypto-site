@@ -1228,4 +1228,157 @@ body.crypto_landing_page_2 footer .lists_footer p {
   font-family: InterDisplay_Regular;
 }
 
+body.dashboard {
+  background-image: url(../img/Group_backgrund_dash.png);
+  background-color: #09111B;
+  background-position: 100%;
+}
+body.dashboard .sidebar {
+  background: #09111B;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  min-width: 301px;
+  border-right: 1px solid;
+}
+body.dashboard .sidebar .logo {
+  margin: 25px 0 50px 35px;
+  width: 60%;
+}
+body.dashboard .sidebar .detail_profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 20px;
+}
+body.dashboard .sidebar .detail_profile .Profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body.dashboard .sidebar .detail_profile .Profile .photo_user {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 100px;
+  overflow: hidden;
+  width: 86px;
+  margin-bottom: 15px;
+}
+body.dashboard .sidebar .detail_profile .Profile .photo_user .MuiAvatar_root {
+  border-radius: 50%;
+  overflow: hidden;
+  user-select: none;
+  width: 85px;
+  height: 83px;
+  position: relative;
+  top: 20px;
+}
+body.dashboard .sidebar .detail_profile .Profile .photo_user .MuiAvatar_root img {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  object-fit: cover;
+  color: transparent;
+  text-indent: 10000px;
+}
+body.dashboard .sidebar .detail_profile .Profile .photo_user .MuiBox_root {
+  width: 100%;
+  height: 20px;
+  background-color: #284972;
+  opacity: 0.8;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body.dashboard .sidebar .detail_profile .Profile .photo_user .MuiBox_root span {
+  color: #FFF;
+  text-align: center;
+  font-family: Futura_PT_normal;
+  font-size: 14px;
+}
+body.dashboard .sidebar .detail_profile .Profile .name_user h3 {
+  color: #F5F6FF;
+  /* popinse/desktop/lable/demibold */
+  font-family: poppins_normal;
+  font-size: 16px;
+}
+body.dashboard .sidebar .detail_profile .banner {
+  margin-bottom: 100px;
+}
+body.dashboard .sidebar .item-dashbord .list_items_dash {
+  list-style: none;
+  display: flex;
+  padding-left: 0rem;
+  row-gap: 5px;
+  flex-direction: column;
+  margin-left: -4px;
+}
+body.dashboard .sidebar .item-dashbord .list_items_dash .item_dash {
+  font-family: poppins_Regular;
+  font-size: 16px;
+  border-radius: 8px;
+}
+body.dashboard .sidebar .item-dashbord .list_items_dash .item_dash a {
+  color: #777;
+  padding: 15px 35px 15px 25px;
+  display: block;
+}
+body.dashboard .sidebar .item-dashbord .list_items_dash .item_dash a svg {
+  margin-right: 16px;
+  fill: #777777;
+}
+body.dashboard .sidebar .item-dashbord .list_items_dash .item_dash:hover, body.dashboard .sidebar .item-dashbord .list_items_dash .item_dash:active {
+  background: var(--Primary-Dark, #284972);
+}
+body.dashboard .sidebar .item-dashbord .list_items_dash .item_dash:hover a, body.dashboard .sidebar .item-dashbord .list_items_dash .item_dash:active a {
+  color: #ffffff;
+}
+body.dashboard .sidebar .item-dashbord .list_items_dash .item_dash:hover a svg, body.dashboard .sidebar .item-dashbord .list_items_dash .item_dash:active a svg {
+  margin-right: 16px;
+  fill: rgb(255, 255, 255) !important;
+}
+body.dashboard main .nav_dashboard {
+  padding-top: 18px;
+  padding-left: 90px;
+}
+body.dashboard main .nav_dashboard .menu .items {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0rem;
+  padding-left: 0rem;
+  column-gap: 50px;
+  align-items: center;
+}
+body.dashboard main .nav_dashboard .menu .items .item a {
+  color: var(--shade-of-blue-0, #F5F6FF);
+  font-family: Futura_PT_Light;
+  font-size: 20px;
+}
+body.dashboard main .nav_dashboard .menu .items .item a:hover {
+  border-bottom: #FFF solid 3px;
+  transition: border-bottom 300ms ease;
+}
+body.dashboard main .nav_dashboard .menu .items .item .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #09111B;
+  min-width: 100px;
+  z-index: 1;
+  list-style: none;
+}
+body.dashboard main .nav_dashboard .menu .items .item:hover .dropdown-content {
+  display: block;
+}
+body.dashboard main .nav_dashboard .lig_tran {
+  display: inline-flex;
+  justify-content: flex-end;
+  column-gap: 20px;
+  width: 100%;
+  padding-right: 15px;
+}
+
 /*# sourceMappingURL=style.css.map */
