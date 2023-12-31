@@ -182,3 +182,45 @@ $backgrundcolor :#09111B ;
         color: #FFF;
     }
 }
+
+// for buttom login singin
+.btn_bold {
+    border-radius: 16px;
+    background: var(--Primary-Dark, #284972);
+    width: 100%;
+    padding: 11px;
+    border: none;
+    transition: all ease-out 300ms;
+    color: #FFF;
+    font-family: Futura_PT_normal;
+    margin-bottom: 5px;
+    &:hover {
+        background: var(--Primary-Dark, #265da1);
+        transition: all ease-in-out 300ms;
+    }
+    &:active {
+        background: var(--Primary-Dark, #2688ff);
+        transition: all ease-in-out 300ms;
+    }
+}
+
+
+.btn_thin {
+    border-radius: 16px;
+    background: var(--Primary-Dark, #18314e00);
+    width: 100%;
+    padding: 11px;
+    border: none;
+    color: #284972;
+    font-family: Futura_PT_normal;
+    margin-bottom: 5px;
+    &:hover {
+        color: #ffffff;
+        border: 1px solid white;
+        transition: all ease-in-out 300ms;
+    }
+    &:active {
+        background: var(--Primary-Dark, #0374ff);
+        transition: all ease-in-out 300ms;
+    }
+}

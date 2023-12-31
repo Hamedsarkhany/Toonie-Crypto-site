@@ -1,6 +1,8 @@
 @import "variable";
 @import "function";
 @import "animation";
+@import "header.scss";
+@import "input_form.scss";
 
 body.crypto_landing_page_1 {
     background-color: #09111B;
@@ -14,140 +16,8 @@ body.crypto_landing_page_1 {
         filter: blur(159.372314453125px);
         z-index: -1;
     }
+    @extend header;
 
-    header.container-fluid {
-        .header {
-            margin-top: 2rem;
-            position: relative;
-            z-index: 1;
-
-            .logo {
-                margin-left: 9%;
-
-                img {
-                    width: 120px;
-                }
-            }
-
-            .menu {
-                ul.items {
-                    list-style: none;
-                    display: flex;
-                    justify-content: space-around;
-                    margin-bottom: 0rem;
-                    padding-left: 0rem;
-
-                    .item {
-                        a {
-                            color: var(--shade-of-blue-0, #F5F6FF);
-                            font-family: Futura_PT_Light;
-                            font-size: 20px;
-
-                            &:hover {
-                                border-bottom: #FFF solid 3px;
-                                transition: border-bottom 300ms ease;
-                            }
-                        }
-
-                        ////style for dropdown
-                        .dropdown-content {
-                            display: none;
-                            position: absolute;
-                            background-color: #09111B;
-                            min-width: 100px;
-                            z-index: 1;
-                            list-style: none;
-                        }
-
-                        &:hover .dropdown-content {
-                            display: block;
-                        }
-
-                    }
-                }
-            }
-
-            .lig_tran {
-                display: inline-flex;
-                justify-content: flex-end;
-                column-gap: 20px;
-                width: 40%;
-                padding-right: 15px;
-
-                div {
-                    cursor: pointer;
-                }
-            }
-
-            .sing_up_in {
-                display: inline-flex;
-                column-gap: 30px;
-                width: 57%;
-                justify-content: center;
-
-                .Sign_Up {
-                    border-radius: 9.556px;
-                    padding: 5px 30px 7px;
-                    border: 0.597px solid #FFF;
-
-                    a {
-                        color: var(--primary-bg-neutral-white, #FFF);
-                        text-align: center;
-                        /* Futura PT/mobile/body/demibold */
-                        font-family: Futura_PT_normal;
-                        font-size: 14px;
-                        line-height: normal;
-                    }
-
-                }
-
-                .Sign_In {
-                    border-radius: 9.556px;
-                    padding: 5px 33px 7px;
-                    background: $btn_color;
-
-                    a {
-                        color: var(--primary-bg-neutral-white, #FFF);
-                        text-align: center;
-                        /* Futura PT/mobile/body/demibold */
-                        font-family: Futura_PT_normal;
-                        font-size: 14px;
-                        line-height: normal;
-                    }
-                }
-            }
-
-            // responsive header 1368px & 1600px
-            @include mediaxxl {
-                .logo {
-                    margin-left: 5%;
-                }
-            }
-
-            // responsive header 1200px & 1367.9px
-            @include mediaxl {
-                .lig_tran {
-                    width: 20%;
-                }
-
-                .sing_up_in {
-                    width: 67%;
-                }
-            }
-
-            // responsive header 992px & 1199px
-            @include medialg {
-                .lig_tran {
-                    width: 23%;
-                }
-
-                .sing_up_in {
-                    width: 75%;
-                    column-gap: 11px;
-                }
-            }
-        }
-    }
 
 
     ////////////////////////// main style 
@@ -1478,4 +1348,106 @@ body.dashboard {
         }
     }
    
+}
+
+/////////////////////////////regesters
+/// 
+/// 
+body.regesters {
+    height: auto;
+    width: 100%; 
+    margin: 0; 
+    padding: 0; 
+    overflow-x: hidden;
+    background-color: #09111B;
+    @extend header;
+    header {
+        z-index: 24;    
+        position :  absolute ;
+    }
+    .lig_tran{
+        column-gap: 34px !important;
+        width: 90% !important;
+    }
+    .dropdown-content {
+        backdrop-filter: blur(25px);
+    }
+    main.sing {
+        margin-top: 8%;
+        position: absolute;
+        z-index: 21;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        row-gap: 20px;
+        justify-content: center;
+
+        .return_home, .title_page, .form  {
+            width: 20%;
+            min-width: 360px;
+        }
+        .title_page {
+            h1 {
+                @extend .h2_style;
+                font-size: 36.226px;
+            }
+                
+        }
+
+        @extend .form;
+
+        .foget {
+            position: relative;
+            top: -33px;
+        }
+        .showpass {
+            position: relative;
+            left: 88%;
+            top: -37px;
+        }
+        .Terms {
+            margin-top: 22px;
+            p {
+                @extend .p_style_mo;
+                text-align: center;
+                font-size: 12px;
+                font-family: poppins_Regular;
+                
+            }
+        }
+        .or_login_with {
+            width: 20%;
+            min-width: 360px;
+            .titrloging{
+                p {
+                    color: aliceblue;
+                    font-size: 12px;
+                    text-align: center;
+                    margin-bottom: -23px;
+                    font-family: poppins_Regular;
+                }
+            }
+            .account_s {
+                display: flex;
+                justify-content: space-between;
+                width: 360px;
+                .account {
+                    display: flex;
+                    width: 45%;
+                    border-radius: 8px;
+                    border: 1px solid var(--Primary-BG-neutral-darkest, #343434);
+                    background: var(--filds-dark, #0C1218);
+                    justify-content: center;
+                    align-items: center;
+                    a {
+                        padding: 11px 55px;
+                    }
+                    &:hover {
+                        background: var(--filds-dark, #0e2138);
+                    }
+                }
+            }
+        }
+    }
 }

@@ -1,0 +1,24 @@
+.form {
+    .div_input{
+        margin-bottom: 25px;
+        label{
+            width: 100%;
+           @extend .p_style_2;
+           margin-bottom: 5px;                
+        }
+        input{
+            width: 100%;
+            border-radius: 16px;
+            border: 1px solid var(--Primary-BG-neutral-darkest, #343434);
+            background: var(--Primary-BG-paper-dark, #0C1218);
+            padding: 5px;
+            &:focus-within {
+                border: 0px solid var(--Primary-BG-neutral-darkest, #002453);
+            }
+            &[placeholder] {
+                @extend .p_style_2;
+                padding-left: 30px;
+            }
+        }
+    }
+}

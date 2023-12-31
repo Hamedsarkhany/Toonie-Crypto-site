@@ -67,7 +67,7 @@ a {
   padding-right: 100px;
 }
 
-.h2_style, body.crypto_landing_page_1 main.container-fluid div.main .text_box7 .titr7 h2, body.crypto_landing_page_1 main.container-fluid div.main .text_box6 .titr6 h2, body.crypto_landing_page_1 main.container-fluid div.main .text_box5 .titr5 h2, body.crypto_landing_page_1 main.container-fluid div.main .text_box4 .titr4 h2, body.crypto_landing_page_1 main.container-fluid div.main .text_box3 .titr3 h2, body.crypto_landing_page_1 main.container-fluid div.main .text_box_2 .titr2 h2, body.crypto_landing_page_1 main.container-fluid div.main .text_box .titr2 h2 {
+.h2_style, body.regesters main.sing .title_page h1, body.crypto_landing_page_1 main.container-fluid div.main .text_box7 .titr7 h2, body.crypto_landing_page_1 main.container-fluid div.main .text_box6 .titr6 h2, body.crypto_landing_page_1 main.container-fluid div.main .text_box5 .titr5 h2, body.crypto_landing_page_1 main.container-fluid div.main .text_box4 .titr4 h2, body.crypto_landing_page_1 main.container-fluid div.main .text_box3 .titr3 h2, body.crypto_landing_page_1 main.container-fluid div.main .text_box_2 .titr2 h2, body.crypto_landing_page_1 main.container-fluid div.main .text_box .titr2 h2 {
   color: #FFF;
   font-family: Futura_PT_normal;
   font-size: 44.226px;
@@ -114,7 +114,7 @@ a {
   text-align: center;
 }
 
-.p_style_mo {
+.p_style_mo, body.regesters main.sing .Terms p {
   color: #FFF;
   font-family: poppins_Regular;
   font-size: 14px;
@@ -139,7 +139,7 @@ a {
   padding: 0px;
 }
 
-.p_style_2, body.crypto_landing_page_2 footer .lists_footer p, body.crypto_landing_page_2 footer .about_toonie .icons_so_madia .made, body.crypto_landing_page_2 main.container-fluid div.main .text_box3 .p_textbox3 p, body.crypto_landing_page_2 main.container-fluid div.main .text_box3 .p_textbox3 h5, body.crypto_landing_page_2 main.container-fluid div.main .text_box2 .description_boxs .de_box p, body.crypto_landing_page_2 main.container-fluid div.main .text_box2 .description_boxs .de_box h5, body.crypto_landing_page_2 main.container-fluid div.main .text_box_1 .p_textbox_1 p, body.crypto_landing_page_2 main.container-fluid div.main .text_box_1 .p_textbox_1 h4 {
+.p_style_2, body.crypto_landing_page_2 footer .lists_footer p, body.crypto_landing_page_2 footer .about_toonie .icons_so_madia .made, body.crypto_landing_page_2 main.container-fluid div.main .text_box3 .p_textbox3 p, body.crypto_landing_page_2 main.container-fluid div.main .text_box3 .p_textbox3 h5, body.crypto_landing_page_2 main.container-fluid div.main .text_box2 .description_boxs .de_box p, body.crypto_landing_page_2 main.container-fluid div.main .text_box2 .description_boxs .de_box h5, body.crypto_landing_page_2 main.container-fluid div.main .text_box_1 .p_textbox_1 p, body.crypto_landing_page_2 main.container-fluid div.main .text_box_1 .p_textbox_1 h4, .form .div_input input[placeholder], body.regesters main.sing .div_input input[placeholder], .form .div_input label, body.regesters main.sing .div_input label {
   color: #FFF;
   font-family: InterDisplay_Regular;
   font-size: 14.344px;
@@ -167,6 +167,46 @@ a {
 }
 .buttom_2 a, body.crypto_landing_page_2 main.container-fluid div.main .text_box3 .Managed_investing a, body.crypto_landing_page_2 main.container-fluid div.main .back_site_blur .title_site .button_start a {
   color: #FFF;
+}
+
+.btn_bold {
+  border-radius: 16px;
+  background: var(--Primary-Dark, #284972);
+  width: 100%;
+  padding: 11px;
+  border: none;
+  transition: all ease-out 300ms;
+  color: #FFF;
+  font-family: Futura_PT_normal;
+  margin-bottom: 5px;
+}
+.btn_bold:hover {
+  background: var(--Primary-Dark, #265da1);
+  transition: all ease-in-out 300ms;
+}
+.btn_bold:active {
+  background: var(--Primary-Dark, #2688ff);
+  transition: all ease-in-out 300ms;
+}
+
+.btn_thin {
+  border-radius: 16px;
+  background: var(--Primary-Dark, rgba(24, 49, 78, 0));
+  width: 100%;
+  padding: 11px;
+  border: none;
+  color: #284972;
+  font-family: Futura_PT_normal;
+  margin-bottom: 5px;
+}
+.btn_thin:hover {
+  color: #ffffff;
+  border: 1px solid white;
+  transition: all ease-in-out 300ms;
+}
+.btn_thin:active {
+  background: var(--Primary-Dark, #0374ff);
+  transition: all ease-in-out 300ms;
 }
 
 @keyframes slidein {
@@ -238,6 +278,129 @@ a {
   animation: slidein_Right 1200ms ease 1s backwards;
 }
 
+header .header, body.regesters .header, body.crypto_landing_page_1 .header {
+  margin-top: 2rem;
+  position: relative;
+  z-index: 1;
+}
+header .header .logo, body.regesters .header .logo, body.crypto_landing_page_1 .header .logo {
+  margin-left: 9%;
+}
+header .header .logo img, body.regesters .header .logo img, body.crypto_landing_page_1 .header .logo img {
+  width: 120px;
+}
+header .header .menu ul.items, body.regesters .header .menu ul.items, body.crypto_landing_page_1 .header .menu ul.items {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 0rem;
+  padding-left: 0rem;
+}
+header .header .menu ul.items .item a, body.regesters .header .menu ul.items .item a, body.crypto_landing_page_1 .header .menu ul.items .item a {
+  color: var(--shade-of-blue-0, #F5F6FF);
+  font-family: Futura_PT_Light;
+  font-size: 20px;
+}
+header .header .menu ul.items .item a:hover, body.regesters .header .menu ul.items .item a:hover, body.crypto_landing_page_1 .header .menu ul.items .item a:hover {
+  border-bottom: #FFF solid 3px;
+  transition: border-bottom 300ms ease;
+}
+header .header .menu ul.items .item .dropdown-content, body.regesters .header .menu ul.items .item .dropdown-content, body.crypto_landing_page_1 .header .menu ul.items .item .dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 100px;
+  z-index: 1;
+  list-style: none;
+}
+header .header .menu ul.items .item:hover .dropdown-content, body.regesters .header .menu ul.items .item:hover .dropdown-content, body.crypto_landing_page_1 .header .menu ul.items .item:hover .dropdown-content {
+  display: block;
+}
+header .header .lig_tran, body.regesters .header .lig_tran, body.crypto_landing_page_1 .header .lig_tran {
+  display: inline-flex;
+  justify-content: flex-end;
+  column-gap: 20px;
+  width: 40%;
+  padding-right: 15px;
+}
+header .header .lig_tran div, body.regesters .header .lig_tran div, body.crypto_landing_page_1 .header .lig_tran div {
+  cursor: pointer;
+}
+header .header .sing_up_in, body.regesters .header .sing_up_in, body.crypto_landing_page_1 .header .sing_up_in {
+  display: inline-flex;
+  column-gap: 30px;
+  width: 57%;
+  justify-content: center;
+}
+header .header .sing_up_in .Sign_Up, body.regesters .header .sing_up_in .Sign_Up, body.crypto_landing_page_1 .header .sing_up_in .Sign_Up {
+  border-radius: 9.556px;
+  padding: 5px 30px 7px;
+  border: 0.597px solid #FFF;
+}
+header .header .sing_up_in .Sign_Up a, body.regesters .header .sing_up_in .Sign_Up a, body.crypto_landing_page_1 .header .sing_up_in .Sign_Up a {
+  color: var(--primary-bg-neutral-white, #FFF);
+  text-align: center;
+  /* Futura PT/mobile/body/demibold */
+  font-family: Futura_PT_normal;
+  font-size: 14px;
+  line-height: normal;
+}
+header .header .sing_up_in .Sign_In, body.regesters .header .sing_up_in .Sign_In, body.crypto_landing_page_1 .header .sing_up_in .Sign_In {
+  border-radius: 9.556px;
+  padding: 5px 33px 7px;
+  background: #284972;
+}
+header .header .sing_up_in .Sign_In a, body.regesters .header .sing_up_in .Sign_In a, body.crypto_landing_page_1 .header .sing_up_in .Sign_In a {
+  color: var(--primary-bg-neutral-white, #FFF);
+  text-align: center;
+  /* Futura PT/mobile/body/demibold */
+  font-family: Futura_PT_normal;
+  font-size: 14px;
+  line-height: normal;
+}
+@media (min-width: 1368px) and (max-width: 1600px) {
+  header .header .logo, body.regesters .header .logo, body.crypto_landing_page_1 .header .logo {
+    margin-left: 5%;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1367.9px) {
+  header .header .lig_tran, body.regesters .header .lig_tran, body.crypto_landing_page_1 .header .lig_tran {
+    width: 20%;
+  }
+  header .header .sing_up_in, body.regesters .header .sing_up_in, body.crypto_landing_page_1 .header .sing_up_in {
+    width: 67%;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  header .header .lig_tran, body.regesters .header .lig_tran, body.crypto_landing_page_1 .header .lig_tran {
+    width: 23%;
+  }
+  header .header .sing_up_in, body.regesters .header .sing_up_in, body.crypto_landing_page_1 .header .sing_up_in {
+    width: 75%;
+    column-gap: 11px;
+  }
+}
+
+.form .div_input, body.regesters main.sing .div_input {
+  margin-bottom: 25px;
+}
+.form .div_input label, body.regesters main.sing .div_input label {
+  width: 100%;
+  margin-bottom: 5px;
+}
+.form .div_input input, body.regesters main.sing .div_input input {
+  width: 100%;
+  border-radius: 16px;
+  border: 1px solid var(--Primary-BG-neutral-darkest, #343434);
+  background: var(--Primary-BG-paper-dark, #0C1218);
+  padding: 5px;
+}
+.form .div_input input:focus-within, body.regesters main.sing .div_input input:focus-within {
+  border: 0px solid var(--Primary-BG-neutral-darkest, #002453);
+}
+.form .div_input input[placeholder], body.regesters main.sing .div_input input[placeholder] {
+  padding-left: 30px;
+}
+
 body.crypto_landing_page_1 {
   background-color: #09111B;
 }
@@ -249,108 +412,6 @@ body.crypto_landing_page_1 .Ellipse1039_2_png {
   width: 100%;
   filter: blur(159.3723144531px);
   z-index: -1;
-}
-body.crypto_landing_page_1 header.container-fluid .header {
-  margin-top: 2rem;
-  position: relative;
-  z-index: 1;
-}
-body.crypto_landing_page_1 header.container-fluid .header .logo {
-  margin-left: 9%;
-}
-body.crypto_landing_page_1 header.container-fluid .header .logo img {
-  width: 120px;
-}
-body.crypto_landing_page_1 header.container-fluid .header .menu ul.items {
-  list-style: none;
-  display: flex;
-  justify-content: space-around;
-  margin-bottom: 0rem;
-  padding-left: 0rem;
-}
-body.crypto_landing_page_1 header.container-fluid .header .menu ul.items .item a {
-  color: var(--shade-of-blue-0, #F5F6FF);
-  font-family: Futura_PT_Light;
-  font-size: 20px;
-}
-body.crypto_landing_page_1 header.container-fluid .header .menu ul.items .item a:hover {
-  border-bottom: #FFF solid 3px;
-  transition: border-bottom 300ms ease;
-}
-body.crypto_landing_page_1 header.container-fluid .header .menu ul.items .item .dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #09111B;
-  min-width: 100px;
-  z-index: 1;
-  list-style: none;
-}
-body.crypto_landing_page_1 header.container-fluid .header .menu ul.items .item:hover .dropdown-content {
-  display: block;
-}
-body.crypto_landing_page_1 header.container-fluid .header .lig_tran {
-  display: inline-flex;
-  justify-content: flex-end;
-  column-gap: 20px;
-  width: 40%;
-  padding-right: 15px;
-}
-body.crypto_landing_page_1 header.container-fluid .header .lig_tran div {
-  cursor: pointer;
-}
-body.crypto_landing_page_1 header.container-fluid .header .sing_up_in {
-  display: inline-flex;
-  column-gap: 30px;
-  width: 57%;
-  justify-content: center;
-}
-body.crypto_landing_page_1 header.container-fluid .header .sing_up_in .Sign_Up {
-  border-radius: 9.556px;
-  padding: 5px 30px 7px;
-  border: 0.597px solid #FFF;
-}
-body.crypto_landing_page_1 header.container-fluid .header .sing_up_in .Sign_Up a {
-  color: var(--primary-bg-neutral-white, #FFF);
-  text-align: center;
-  /* Futura PT/mobile/body/demibold */
-  font-family: Futura_PT_normal;
-  font-size: 14px;
-  line-height: normal;
-}
-body.crypto_landing_page_1 header.container-fluid .header .sing_up_in .Sign_In {
-  border-radius: 9.556px;
-  padding: 5px 33px 7px;
-  background: #284972;
-}
-body.crypto_landing_page_1 header.container-fluid .header .sing_up_in .Sign_In a {
-  color: var(--primary-bg-neutral-white, #FFF);
-  text-align: center;
-  /* Futura PT/mobile/body/demibold */
-  font-family: Futura_PT_normal;
-  font-size: 14px;
-  line-height: normal;
-}
-@media (min-width: 1368px) and (max-width: 1600px) {
-  body.crypto_landing_page_1 header.container-fluid .header .logo {
-    margin-left: 5%;
-  }
-}
-@media (min-width: 1200px) and (max-width: 1367.9px) {
-  body.crypto_landing_page_1 header.container-fluid .header .lig_tran {
-    width: 20%;
-  }
-  body.crypto_landing_page_1 header.container-fluid .header .sing_up_in {
-    width: 67%;
-  }
-}
-@media (min-width: 992px) and (max-width: 1199px) {
-  body.crypto_landing_page_1 header.container-fluid .header .lig_tran {
-    width: 23%;
-  }
-  body.crypto_landing_page_1 header.container-fluid .header .sing_up_in {
-    width: 75%;
-    column-gap: 11px;
-  }
 }
 body.crypto_landing_page_1 main.container-fluid {
   padding: 0px;
@@ -782,21 +843,21 @@ body.crypto_landing_page_2 .Ellipse1039_2_png {
   filter: blur(159.3723144531px);
   z-index: -1;
 }
-body.crypto_landing_page_2 header.container-fluid .header {
+body.crypto_landing_page_2 header.container-fluid .header, body.crypto_landing_page_2 body.container-fluid.regesters .header, body.crypto_landing_page_2 body.container-fluid.crypto_landing_page_1 .header {
   margin-top: 2rem;
   position: relative;
   z-index: 1;
 }
-body.crypto_landing_page_2 header.container-fluid .header .logo {
+body.crypto_landing_page_2 header.container-fluid .header .logo, body.crypto_landing_page_2 body.container-fluid.regesters .header .logo, body.crypto_landing_page_2 body.container-fluid.crypto_landing_page_1 .header .logo {
   margin-left: 9%;
 }
-body.crypto_landing_page_2 header.container-fluid .header .logo img {
+body.crypto_landing_page_2 header.container-fluid .header .logo img, body.crypto_landing_page_2 body.container-fluid.regesters .header .logo img, body.crypto_landing_page_2 body.container-fluid.crypto_landing_page_1 .header .logo img {
   width: 120px;
 }
-body.crypto_landing_page_2 header.container-fluid .header .menu {
+body.crypto_landing_page_2 header.container-fluid .header .menu, body.crypto_landing_page_2 body.container-fluid.regesters .header .menu, body.crypto_landing_page_2 body.container-fluid.crypto_landing_page_1 .header .menu {
   margin-right: 9%;
 }
-body.crypto_landing_page_2 header.container-fluid .header .menu ul.items {
+body.crypto_landing_page_2 header.container-fluid .header .menu ul.items, body.crypto_landing_page_2 body.container-fluid.regesters .header .menu ul.items, body.crypto_landing_page_2 body.container-fluid.crypto_landing_page_1 .header .menu ul.items {
   list-style: none;
   display: flex;
   justify-content: flex-end;
@@ -805,16 +866,16 @@ body.crypto_landing_page_2 header.container-fluid .header .menu ul.items {
   column-gap: 25px;
   align-items: center;
 }
-body.crypto_landing_page_2 header.container-fluid .header .menu ul.items .item a {
+body.crypto_landing_page_2 header.container-fluid .header .menu ul.items .item a, body.crypto_landing_page_2 body.container-fluid.regesters .header .menu ul.items .item a, body.crypto_landing_page_2 body.container-fluid.crypto_landing_page_1 .header .menu ul.items .item a {
   color: var(--shade-of-blue-0, #F5F6FF);
   font-family: Futura_PT_Light;
   font-size: 18px;
 }
-body.crypto_landing_page_2 header.container-fluid .header .menu ul.items .item a:hover {
+body.crypto_landing_page_2 header.container-fluid .header .menu ul.items .item a:hover, body.crypto_landing_page_2 body.container-fluid.regesters .header .menu ul.items .item a:hover, body.crypto_landing_page_2 body.container-fluid.crypto_landing_page_1 .header .menu ul.items .item a:hover {
   border-bottom: #FFF solid 3px;
   transition: border-bottom 300ms ease;
 }
-body.crypto_landing_page_2 header.container-fluid .header .menu ul.items .item .dropdown-content {
+body.crypto_landing_page_2 header.container-fluid .header .menu ul.items .item .dropdown-content, body.crypto_landing_page_2 body.container-fluid.regesters .header .menu ul.items .item .dropdown-content, body.crypto_landing_page_2 body.container-fluid.crypto_landing_page_1 .header .menu ul.items .item .dropdown-content {
   display: none;
   position: absolute;
   background-color: #09111B;
@@ -823,15 +884,15 @@ body.crypto_landing_page_2 header.container-fluid .header .menu ul.items .item .
   list-style: none;
   border-radius: 5px;
 }
-body.crypto_landing_page_2 header.container-fluid .header .menu ul.items .item:hover .dropdown-content {
+body.crypto_landing_page_2 header.container-fluid .header .menu ul.items .item:hover .dropdown-content, body.crypto_landing_page_2 body.container-fluid.regesters .header .menu ul.items .item:hover .dropdown-content, body.crypto_landing_page_2 body.container-fluid.crypto_landing_page_1 .header .menu ul.items .item:hover .dropdown-content {
   display: block;
 }
-body.crypto_landing_page_2 header.container-fluid .header .menu ul.items .Sign_Up a {
+body.crypto_landing_page_2 header.container-fluid .header .menu ul.items .Sign_Up a, body.crypto_landing_page_2 body.container-fluid.regesters .header .menu ul.items .Sign_Up a, body.crypto_landing_page_2 body.container-fluid.crypto_landing_page_1 .header .menu ul.items .Sign_Up a {
   color: var(--shade-of-blue-0, #F5F6FF);
   font-family: Futura_PT_Light;
   font-size: 18px;
 }
-body.crypto_landing_page_2 header.container-fluid .header .menu ul.items .Sign_Up::before {
+body.crypto_landing_page_2 header.container-fluid .header .menu ul.items .Sign_Up::before, body.crypto_landing_page_2 body.container-fluid.regesters .header .menu ul.items .Sign_Up::before, body.crypto_landing_page_2 body.container-fluid.crypto_landing_page_1 .header .menu ul.items .Sign_Up::before {
   content: " ";
   display: block;
   width: 30%;
@@ -840,7 +901,7 @@ body.crypto_landing_page_2 header.container-fluid .header .menu ul.items .Sign_U
   border-radius: 50px;
   transition-duration: 200ms;
 }
-body.crypto_landing_page_2 header.container-fluid .header .menu ul.items .Sign_Up:hover::before {
+body.crypto_landing_page_2 header.container-fluid .header .menu ul.items .Sign_Up:hover::before, body.crypto_landing_page_2 body.container-fluid.regesters .header .menu ul.items .Sign_Up:hover::before, body.crypto_landing_page_2 body.container-fluid.crypto_landing_page_1 .header .menu ul.items .Sign_Up:hover::before {
   content: " ";
   display: block;
   width: 100%;
@@ -849,12 +910,12 @@ body.crypto_landing_page_2 header.container-fluid .header .menu ul.items .Sign_U
   border-radius: 50px;
   transition-duration: 200ms;
 }
-body.crypto_landing_page_2 header.container-fluid .header .menu ul.items .Sign_In {
+body.crypto_landing_page_2 header.container-fluid .header .menu ul.items .Sign_In, body.crypto_landing_page_2 body.container-fluid.regesters .header .menu ul.items .Sign_In, body.crypto_landing_page_2 body.container-fluid.crypto_landing_page_1 .header .menu ul.items .Sign_In {
   border-radius: 4px 4px 4px 20px;
   padding: 2px 25px 7px;
   background: #37659E;
 }
-body.crypto_landing_page_2 header.container-fluid .header .menu ul.items .Sign_In a {
+body.crypto_landing_page_2 header.container-fluid .header .menu ul.items .Sign_In a, body.crypto_landing_page_2 body.container-fluid.regesters .header .menu ul.items .Sign_In a, body.crypto_landing_page_2 body.container-fluid.crypto_landing_page_1 .header .menu ul.items .Sign_In a {
   color: var(--primary-bg-neutral-white, #FFF);
   text-align: center;
   /* Futura PT/mobile/body/demibold */
@@ -1379,6 +1440,92 @@ body.dashboard main .nav_dashboard .lig_tran {
   column-gap: 20px;
   width: 100%;
   padding-right: 15px;
+}
+
+body.regesters {
+  height: auto;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background-color: #09111B;
+}
+body.regesters header, body.regesters body.crypto_landing_page_1, body.regesters body.regesters {
+  z-index: 24;
+  position: absolute;
+}
+body.regesters .lig_tran {
+  column-gap: 34px !important;
+  width: 90% !important;
+}
+body.regesters .dropdown-content {
+  backdrop-filter: blur(25px);
+}
+body.regesters main.sing {
+  margin-top: 8%;
+  position: absolute;
+  z-index: 21;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  row-gap: 20px;
+  justify-content: center;
+}
+body.regesters main.sing .return_home, body.regesters main.sing .title_page, body.regesters main.sing .form, body.regesters main.sing main.sing {
+  width: 20%;
+  min-width: 360px;
+}
+body.regesters main.sing .title_page h1 {
+  font-size: 36.226px;
+}
+body.regesters main.sing .foget {
+  position: relative;
+  top: -33px;
+}
+body.regesters main.sing .showpass {
+  position: relative;
+  left: 88%;
+  top: -37px;
+}
+body.regesters main.sing .Terms {
+  margin-top: 22px;
+}
+body.regesters main.sing .Terms p {
+  text-align: center;
+  font-size: 12px;
+  font-family: poppins_Regular;
+}
+body.regesters main.sing .or_login_with {
+  width: 20%;
+  min-width: 360px;
+}
+body.regesters main.sing .or_login_with .titrloging p {
+  color: aliceblue;
+  font-size: 12px;
+  text-align: center;
+  margin-bottom: -23px;
+  font-family: poppins_Regular;
+}
+body.regesters main.sing .or_login_with .account_s {
+  display: flex;
+  justify-content: space-between;
+  width: 360px;
+}
+body.regesters main.sing .or_login_with .account_s .account {
+  display: flex;
+  width: 45%;
+  border-radius: 8px;
+  border: 1px solid var(--Primary-BG-neutral-darkest, #343434);
+  background: var(--filds-dark, #0C1218);
+  justify-content: center;
+  align-items: center;
+}
+body.regesters main.sing .or_login_with .account_s .account a {
+  padding: 11px 55px;
+}
+body.regesters main.sing .or_login_with .account_s .account:hover {
+  background: var(--filds-dark, #0e2138);
 }
 
 /*# sourceMappingURL=style.css.map */

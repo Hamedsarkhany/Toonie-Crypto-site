@@ -1,0 +1,135 @@
+
+
+header {
+    .header {
+        margin-top: 2rem;
+        position: relative;
+        z-index: 1;
+
+        .logo {
+            margin-left: 9%;
+
+            img {
+                width: 120px;
+            }
+        }
+
+        .menu {
+            ul.items {
+                list-style: none;
+                display: flex;
+                justify-content: space-around;
+                margin-bottom: 0rem;
+                padding-left: 0rem;
+
+                .item {
+                    a {
+                        color: var(--shade-of-blue-0, #F5F6FF);
+                        font-family: Futura_PT_Light;
+                        font-size: 20px;
+
+                        &:hover {
+                            border-bottom: #FFF solid 3px;
+                            transition: border-bottom 300ms ease;
+                        }
+                    }
+
+                    ////style for dropdown
+                    .dropdown-content {
+                        display: none;
+                        position: absolute;
+                        min-width: 100px;
+                        z-index: 1;
+                        list-style: none;
+                    }
+
+                    &:hover .dropdown-content {
+                        display: block;
+                    }
+
+                }
+            }
+        }
+
+        .lig_tran {
+            display: inline-flex;
+            justify-content: flex-end;
+            column-gap: 20px;
+            width: 40%;
+            padding-right: 15px;
+
+            div {
+                cursor: pointer;
+            }
+        }
+
+        .sing_up_in {
+            display: inline-flex;
+            column-gap: 30px;
+            width: 57%;
+            justify-content: center;
+
+            .Sign_Up {
+                border-radius: 9.556px;
+                padding: 5px 30px 7px;
+                border: 0.597px solid #FFF;
+
+                a {
+                    color: var(--primary-bg-neutral-white, #FFF);
+                    text-align: center;
+                    /* Futura PT/mobile/body/demibold */
+                    font-family: Futura_PT_normal;
+                    font-size: 14px;
+                    line-height: normal;
+                }
+
+            }
+
+            .Sign_In {
+                border-radius: 9.556px;
+                padding: 5px 33px 7px;
+                background: $btn_color;
+
+                a {
+                    color: var(--primary-bg-neutral-white, #FFF);
+                    text-align: center;
+                    /* Futura PT/mobile/body/demibold */
+                    font-family: Futura_PT_normal;
+                    font-size: 14px;
+                    line-height: normal;
+                }
+            }
+        }
+
+        // responsive header 1368px & 1600px
+        @include mediaxxl {
+            .logo {
+                margin-left: 5%;
+            }
+        }
+
+        // responsive header 1200px & 1367.9px
+        @include mediaxl {
+            .lig_tran {
+                width: 20%;
+            }
+
+            .sing_up_in {
+                width: 67%;
+            }
+        }
+
+        // responsive header 992px & 1199px
+        @include medialg {
+            .lig_tran {
+                width: 23%;
+            }
+
+            .sing_up_in {
+                width: 75%;
+                column-gap: 11px;
+            }
+        }
+    }
+}
+

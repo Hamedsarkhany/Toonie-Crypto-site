@@ -4,21 +4,20 @@
 
 ///menu-bar-mobile js
 var menu = document.getElementById('dd');
-        
-let showMenu = false;
-        
-
-        
+var menu_btn = document.querySelector('menu-btn');     
+let showMenu = true;
+              
 function toggleMenu() {
-  if (!showMenu) {
-    menu.classList.add('show');
-    showMenu = true;
-  } 
-  else {
-    menu.classList.remove('show');
-    showMenu = false;
-  }
+    menu.classList.toggle('show');
 }
+console.log(menu.classList)
+console.log(menu.style.left)
+
+// document.addEventListener("click", function () {
+//     menu.classList.toggle('show');
+// });
+
+
 // ////////////////////////////////////  
 
 
@@ -30,14 +29,14 @@ function  haederanime() {
         var dropdown = document.querySelector(".dropdown-content");
         if (this.scrollY > 500) {
             navElement.style.position = "fixed"
-            navElement.style.zIndex = 2
+            navElement.style.zIndex = 24
             navElement.style.backgroundColor = "#0F1A27"
             dropdown.style.backgroundColor = "#0F1A27"
             bodyElement.style.margin = "1rem 0rem"
 
         } else {
             navElement.style.position = "absolute"
-            navElement.style.zIndex = 2
+            navElement.style.zIndex = 24
             navElement.style.backgroundColor = "rgb(15 26 39 / 0%)"
             dropdown.style.backgroundColor = "rgb(15 26 39 / 0%)"
         }

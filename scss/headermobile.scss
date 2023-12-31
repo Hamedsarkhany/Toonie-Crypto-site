@@ -1,0 +1,276 @@
+.headermobi {
+    
+
+    /* start header */
+    .header {
+        display: none;
+        margin-top: 25px;
+        z-index: 3;
+        position: relative;
+    }
+
+    .mobile-header {
+        height: 84px;
+        align-items: center;
+        display: flex;
+        z-index: 3;
+        position: fixed;
+        width: 100%;
+        background: #09111B;
+    }
+
+    .mob-heder-row {
+        display: flex;
+        align-items: center;
+    }
+
+    .ct-menu-mobile {
+        display: flex;
+        justify-content: flex-end;
+        grid-gap: 25px;
+        margin: 25px;
+    }
+
+    /* The sticky class is added to the header with JS when it reaches its scroll position */
+    .header-Support {
+        display: flex;
+        position: relative;
+        margin-right: 38px;
+        margin-bottom: 14px;
+    }
+
+    .logo {
+        margin-bottom: 20px;
+    }
+
+    .header-email {
+        margin-right: -4px;
+        padding-right: 45px;
+    }
+
+    .icon-header {
+        font-size: 33px;
+        color: #54febd;
+        margin-left: 15px;
+        line-height: 1;
+    }
+
+    .meta-header {
+        font-family: 'Futura_PT_Light';
+        font-size: 15px;
+        color: #6c6c6c;
+    }
+
+    .list-item {
+        display: flex;
+        align-items: center;
+    }
+
+    .item {
+        font-family: 'Futura_PT_Light';
+        text-transform: uppercase;
+    }
+
+    .item::after {
+        display: block;
+        content: ' ';
+        border-bottom: solid 5px #54febd;
+        transform: scaleX(0);
+        transition: transform 250ms ease-in-out;
+        padding-bottom: 21px;
+    }
+
+    .item:hover:after {
+        transform: scaleX(1);
+    }
+
+    .item::after:active {
+        display: block;
+        content: ' ';
+        border-bottom: solid 5px #54febd;
+        transform: scaleX(0);
+        transition: transform 250ms ease-in-out;
+        padding-bottom: 21px;
+    }
+
+    .item:hover:after:active {
+        transform: scaleX(1);
+    }
+
+    /* dropdown */
+
+    .menu-item-130 {
+        position: relative;
+        display: inline-block !important;
+        display: block;
+        padding: 0px 35px;
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 18px;
+    }
+
+    .sub-menu {
+        display: none;
+        position: absolute;
+        right: -8px;
+        top: 56px;
+        background-color: #09111B;
+        min-width: 12vw;
+        z-index: 1;
+        border-radius: 5px;
+        list-style: none;
+        padding: 0px;
+    }
+
+    .item:hover>.sub-menu {
+        position: static;
+        display: block;
+    }
+
+    .menu-item-130>.sub-menu>li {
+        padding: 15px 15px;
+        font-size: 16px;
+        font-weight: 600;
+        background-color: #09111B;
+        color: #ffffff;
+        border-radius: 5px;
+        transition: 0.2s;
+    }
+
+    .menu-item-130>.sub-menu>li:hover {
+        color: #fff;
+        transition: 0.4s;
+    }
+
+    .icon-option {
+        position: relative;
+        left: 36px;
+    }
+
+    .header-button {
+        border-radius: 4px;
+        margin-right: 40px;
+        margin-bottom: 32px;
+        background-color: rgb(255, 255, 255);
+        color: white;
+        width: 160px;
+        height: 46px;
+        padding: 10px;
+    }
+
+    .header-button:hover {
+        background-color: #1d1b4c;
+    }
+
+    .header-button>a {
+        font-family: 'Futura_PT_normal';
+        color: #1d1b4c;
+        height: 38px;
+        width: inherit;
+        display: inline-block;
+        font-size: 18px;
+    }
+
+    .header-button>a:hover {
+        color: rgb(255, 255, 255);
+    }
+
+    /*end sub menu*/
+    /* hader mobile */
+    /* menu-bar-mobile css */
+    .menu {
+        height: 100vh;
+        width: 68%;
+        top: 0;
+        left: -100%;
+        transition: all 0.3s ease-in;
+        background-color: #09111B;
+        position: absolute;
+        overflow: scroll;
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            flex-direction: column;
+
+            li {
+                margin: 10px 7px;
+
+                a {
+                    display: block;
+                    padding: 0px 35px;
+                    color: #ffffff;
+                    text-decoration: none;
+                    font-size: 18px;
+                }
+            }
+        }
+        .logo {
+            text-align: center;
+            margin-top: 25px;
+        }
+        .sing_up_in {
+            display: flex;
+            row-gap: 13px;
+            justify-content: center;
+            flex-direction: column;
+            width: 100%;
+            align-items: center;
+
+            .Sign_Up {
+                border-radius: 9.556px;
+                padding: 5px 73px 7px;
+                border: 0.597px solid #FFF;
+
+                a {
+                    color: var(--primary-bg-neutral-white, #FFF);
+                    text-align: center;
+                    /* Futura PT/mobile/body/demibold */
+                    font-family: Futura_PT_normal;
+                    font-size: 14px;
+                    line-height: normal;
+                }
+
+            }
+
+            .Sign_In {
+                border-radius: 9.556px;
+                padding: 5px 78px 7px;
+                background: $btn_color;
+                margin-bottom: 10px;
+
+                a {
+                    color: var(--primary-bg-neutral-white, #FFF);
+                    text-align: center;
+                    /* Futura PT/mobile/body/demibold */
+                    font-family: Futura_PT_normal;
+                    font-size: 14px;
+                    line-height: normal;
+                }
+            }
+        }
+        
+    }
+
+    /* Show menu in open state */
+    .show {
+        left: -4px;
+        transition: all 0.3s ease-in;
+        z-index: 10;
+    }
+
+    .menu-btn {
+        width: 30%;
+        position: relative;
+        left: -8%;
+        z-index: 11;
+        border: solid #9d9d9d 0px;
+        border-radius: 8px;
+        top: -2px;
+        display: block;
+        background: #09111B;
+    }
+
+
+}
